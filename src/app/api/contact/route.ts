@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 interface ContactFormData {
   name: string
   institution: string
@@ -200,6 +198,7 @@ export async function POST(request: NextRequest) {
 
     const safeSubject = sanitizeSubject(`Novo contato de ${body.name} — ${body.institution}`)
 
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const { error } = await resend.emails.send({
       from: 'Literacia Edu <onboarding@resend.dev>',
       to: 'karoline@literaciaedu.com',
