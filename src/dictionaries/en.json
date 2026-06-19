@@ -1,0 +1,413 @@
+{
+  "common": {
+    "cta": {
+      "solutions": "Discover our solutions",
+      "contact": "Contact us",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "more": "Learn more",
+      "backToHome": "Back to Home",
+      "underDevelopment": "Under development"
+    },
+    "languages": {
+      "pt": "Português",
+      "en": "English",
+      "es": "Español"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "solutions": "Solutions",
+      "press": "Press",
+      "contact": "Contact"
+    },
+    "footer": {
+      "description": "Education, Science, and Digital Literacy for Tomorrow. An EdTech focused on building critical thinking and digital resilience in children and teens.",
+      "about": "About",
+      "solutions": "Solutions",
+      "press": "Press",
+      "contact": "Contact",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "rights": "© 2026 Literacia Edu. All rights reserved. CNPJ: 54.896.712/0001-92.",
+      "followUs": "Follow us"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Education, Science, and Digital Literacy for Tomorrow",
+      "subtitle": "We develop educational solutions based on scientific evidence to strengthen critical thinking, digital citizenship, and resilience in children and adolescents facing the challenges of the information age.",
+      "badge": "Evidence-based EdTech",
+      "mockup": {
+        "letramento": "Media Literacy",
+        "desc": "Teaching young people to identify disinformation through active inoculation mechanics."
+      }
+    },
+    "impact": {
+      "title": "Our Impact in Numbers",
+      "subtitle": "Cutting-edge research and technology serving digital education.",
+      "items": [
+        {
+          "value": "100%",
+          "label": "Scientific Base",
+          "desc": "Academically validated methodologies"
+        },
+        {
+          "value": "+5,000",
+          "label": "Impacted Youth",
+          "desc": "Students in pilot projects"
+        },
+        {
+          "value": "15+",
+          "label": "Awards & Grants",
+          "desc": "Supported by local and international programs"
+        },
+        {
+          "value": "3",
+          "label": "Languages",
+          "desc": "Ready for global scale"
+        }
+      ]
+    },
+    "importance": {
+      "title": "Why does it matter?",
+      "subtitle": "The digital environment poses invisible risks that impact young people's learning and well-being. We act at the root cause.",
+      "kicker": "Combating Disinformation",
+      "items": [
+        {
+          "title": "Disinformation & Fake News",
+          "desc": "The proliferation of false stories undermines public trust and misleads young people. We teach them to read beyond the click."
+        },
+        {
+          "title": "Digital Radicalization",
+          "desc": "Algorithms create bubbles that can expose teenagers to hate speech and extremist views. We build cognitive resilience to these manipulations."
+        },
+        {
+          "title": "Critical Thinking",
+          "desc": "More than just using digital devices, young people must learn to question sources, motivations, and the context of what they consume online."
+        },
+        {
+          "title": "Digital Safety",
+          "desc": "We empower the next generation to browse autonomously, protecting their privacy and fostering healthy relationships online."
+        }
+      ]
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "A unique combination of serious games, cognitive psychology, and student-centered design.",
+      "kicker": "Technology and Gamification",
+      "items": {
+        "meiasVerdades": {
+          "title": "Meias#Verdades",
+          "desc": "A revolutionary educational mobile game based on Inoculation Theory (prebunking). Young people learn disinformation techniques by playing as content creators, building 'mental antibodies' against online manipulation.",
+          "badge": "Mobile Game",
+          "support": "Support: KU Leuven"
+        },
+        "meiasVerdadesMemory": {
+          "title": "Meias#Verdades Memory Game",
+          "desc": "A dynamic physical (offline) card game designed for classrooms and group activities. It encourages face-to-face discussions, stimulates cooperation, and introduces essential digital literacy concepts.",
+          "badge": "Offline / Classroom",
+          "alignment": "BNCC Aligned"
+        },
+        "codigoPata": {
+          "title": "Código P.A.T.A.",
+          "desc": "Our next digital platform under development. A complete gamified ecosystem for schools that expands computational and media literacy skills for middle school students.",
+          "badge": "Under development",
+          "launch": "Release scheduled for next semester."
+        }
+      }
+    },
+    "methodology": {
+      "title": "The Science behind the Methodology",
+      "subtitle": "We do not rely on guesswork. Our learning ecosystem is built upon consolidated scientific pillars.",
+      "kicker": "Data-driven Methodology",
+      "cards": [
+        {
+          "title": "Inoculation",
+          "desc": "\"Mental vaccine\" methodology to disarm manipulations."
+        },
+        {
+          "title": "Serious Games",
+          "desc": "Playful mechanics converted into learning retention."
+        },
+        {
+          "title": "Microlearning",
+          "desc": "High-absorption fractional lessons for youth audiences."
+        },
+        {
+          "title": "Evidence",
+          "desc": "Scientifically quantifiable behavior analyses."
+        }
+      ],
+      "items": [
+        {
+          "title": "Serious Games",
+          "desc": "Game-based learning triggers deep emotional and cognitive engagement, ensuring long-term knowledge retention."
+        },
+        {
+          "title": "Inoculation Theory",
+          "desc": "Just like a medical vaccine, we expose students to weakened doses of digital manipulation techniques so they can recognize and reject them in the real world."
+        },
+        {
+          "title": "Microlearning",
+          "desc": "Content broken down into highly focused micro-doses, tailored to the pace and attention span of modern teens."
+        },
+        {
+          "title": "Information Science & Psychology",
+          "desc": "Rigorous analysis of human informational behavior and cognitive decision-making processes in digital networks."
+        }
+      ]
+    },
+    "founder": {
+      "title": "Leadership & Scientific Foundation",
+      "subtitle": "Born in academia, designed for the world.",
+      "name": "Karoline Fernandes",
+      "role": "Founder and Research Director",
+      "roleLabel": "PhD in Media Literacy",
+      "bio": "Holding a PhD and a solid track record of scientific research in Media and Information Literacy, Karoline Fernandes leads Literacia Edu with a clear vision: turning cutting-edge academic research into high-impact social solutions. With international research experience at KU Leuven (Belgium) and projects supported by SUDENE, she oversees the development of the Meias#Verdades game and drives the national and international expansion of the startup.",
+      "quote": "\"Our mission is to equip children and teens with the cognitive antibodies required to navigate the internet with independence and safety.\""
+    },
+    "partners": {
+      "title": "Institutional Partners & Support",
+      "types": {
+        "academic": "Academic",
+        "research": "International Research",
+        "acceleration": "Funding / Acceleration",
+        "government": "Government / Projects"
+      }
+    },
+    "press": {
+      "title": "Literacia Edu in the Media",
+      "subtitle": "Follow our journey, interviews, and media coverage.",
+      "kicker": "Communication Room",
+      "noNews": "No articles published yet. For media requests, interviews, and press releases, please visit our press area.",
+      "readMore": "Read full article",
+      "articles": [
+        {
+          "category": "ACADEMIC PAPER",
+          "date": "OCT/2025",
+          "title": "Inoculation Theory applied to fake news literacy: A study on the Meias#Verdades game.",
+          "desc": "Analysis of cognitive impact on students from partner schools in Northeast Brazil.",
+          "source": "KU Leuven Research"
+        },
+        {
+          "category": "ACCELERATION NEWS",
+          "date": "JAN/2026",
+          "title": "SUDENE supports expansion of media literacy in Pernambuco school networks.",
+          "desc": "Literacia Edu startup receives acceleration funding to scale educational mobile games.",
+          "source": "Sudene News"
+        },
+        {
+          "category": "GAMES FESTIVAL",
+          "date": "MAY/2026",
+          "title": "Meias#Verdades nominated for best educational game of the year at congress.",
+          "desc": "The gamified social media simulator receives technical recognition for interactivity and design.",
+          "source": "SBGames Congress"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "Preparing citizens for the digital age",
+      "subtitle": "Join us in our mission to raise a more critical, secure, and resilient generation against online lies. Shall we talk?",
+      "button": "Become a partner"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Transforming scientific evidence into shields against disinformation.",
+    "historyTitle": "Our Story",
+    "historyDesc": "Literacia Edu was born as an academic research project focused on solving one of the most pressing issues of the contemporary era: the vulnerability of young generations to fake news, disinformation, and online radicalization. Led by researcher Karoline Fernandes, the initiative evolved from academic theses and lab testing to become a Brazilian EdTech with social impact. Today, we unite national and international universities to bring media literacy to public and private schools, proving that science and playful education are the best paths to a healthy digital future.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To empower children and adolescents to develop critical thinking and digital resilience, providing innovative educational tools based on scientific evidence."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To be the leading global reference in educational solutions for youth media literacy and combating disinformation by 2030, integrating technology, psychology, and science."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Scientific Rigor",
+          "desc": "All of our methodologies and games are built on top of active, peer-reviewed, and validated scientific research."
+        },
+        {
+          "title": "Educational Innovation",
+          "desc": "We create learning experiences that truly resonate with young audiences through gamification."
+        },
+        {
+          "title": "Ethics & Transparency",
+          "desc": "We promote truth, data privacy, and social responsibility in every project."
+        },
+        {
+          "title": "Social Inclusion",
+          "desc": "We work actively to bring our tools to both private and public school systems."
+        }
+      ]
+    },
+    "scienceTitle": "The Science of Media Literacy",
+    "scienceDesc1": "Our main methodological foundation lies in Psychological Inoculation Theory, popularly referred to in digital communication as Prebunking. Simply put, just as a medical vaccine introduces a weakened virus to train the immune system, our games present users, in a controlled and playful environment, with manipulation techniques (such as emotional appeals, false dilemmas, and scapegoating).",
+    "scienceDesc2": "By learning how to create and recognize these techniques through gameplay, young people develop cognitive resistance. Thus, when they encounter real disinformation on their daily social media feeds, they instantly spot it and reject impulsive sharing.",
+    "founderTitle": "Our Founder",
+    "scienceKicker": "Academic Foundation",
+    "vacinaTitle": "Cognitive Vaccine",
+    "vacinaDesc": "Media literacy at Literacia Edu is not passive. Based on Inoculation Theory, we teach manipulation techniques before young people experience them.",
+    "inoculacaoTitle": "Inoculation Theory",
+    "inoculacaoDesc": "Like a vaccine that stimulates internal defenses, we present fake news techniques in a simplified way to develop critical thinking antibodies.",
+    "directorLabel": "Directorate of Science",
+    "timeline": {
+      "title": "Our Scientific Journey",
+      "items": [
+        {
+          "year": "2022",
+          "title": "Origins in Research",
+          "desc": "Initiation of the conceptual development of media literacy solutions at UFPE."
+        },
+        {
+          "year": "2023",
+          "title": "International Connection",
+          "desc": "Karoline Fernandes conducts international research at the prestigious KU Leuven in Belgium, refining the inoculation model."
+        },
+        {
+          "year": "2024",
+          "title": "Government Support",
+          "desc": "Acceleration by the SUDENE program and field tests in public schools in Pernambuco, yielding highly positive results."
+        },
+        {
+          "year": "2025",
+          "title": "Foundation & Launch",
+          "desc": "Formal incorporation of Literacia Edu as a commercial EdTech and expansion of the mobile and physical game portfolio."
+        }
+      ]
+    }
+  },
+  "solutions": {
+    "title": "Our Educational Solutions",
+    "subtitle": "Intelligent gamification to develop alert and resilient minds.",
+    "cta": {
+      "title": "Want to see it up close at your school or institution?",
+      "desc": "We offer guided pilot programs and complete pedagogical consulting for education departments and school networks.",
+      "button": "Talk to our team"
+    },
+    "meiasVerdades": {
+      "title": "Meias#Verdades Mobile Game",
+      "subtitle": "A cognitive vaccine against social media disinformation.",
+      "featuresTitle": "Features & Benefits",
+      "features": [
+        "Social media simulator integrated within a secure environment.",
+        "Educational roleplay: students play from the malicious content creator's perspective to understand internal mechanics.",
+        "Modules based on real-world techniques: bot usage, hyper-emotional appeals, conspiracy theories, and artificial polarization.",
+        "Real-time media literacy progress metrics for educators."
+      ],
+      "audience": "Recommended for middle and high schools (ages 11 to 17).",
+      "mockup": {
+        "module": "MODULE 01",
+        "quote": "\"Share this lie to earn engagement points.\"",
+        "desc": "The game challenges students to create posts with emotional appeal or scapegoating to teach the risks behind the easy click.",
+        "identify": "Identify Technique",
+        "skip": "Skip"
+      }
+    },
+    "memoryGame": {
+      "title": "Meias#Verdades Memory Game (Offline)",
+      "subtitle": "In-person, dynamic, and cooperative media literacy.",
+      "featuresTitle": "Why use it in the classroom?",
+      "features": [
+        "Perfect for schools with smartphone usage restrictions in classrooms.",
+        "Promotes teacher-mediated face-to-face dialogue, developing soft skills like cooperation and debate.",
+        "Card deck with exclusive illustrations and real problem-solving cases adapted for group discussions.",
+        "Complete teacher's guide aligned with modern curriculum competencies."
+      ],
+      "audience": "Recommended for elementary and middle schools (ages 8 to 14).",
+      "mockup": {
+        "boardGame": "Board and Card Game",
+        "desc": "In-person interaction for deep debates.",
+        "meias": "MEIAS",
+        "meiasDesc": "Digital Bots",
+        "verdades": "#VERDADES",
+        "verdadesDesc": "Fake News",
+        "edu": "EDU",
+        "eduDesc": "Citizenship"
+      }
+    },
+    "codigoPata": {
+      "title": "Código P.A.T.A.",
+      "subtitle": "The future frontier of digital literacy.",
+      "desc": "Código P.A.T.A. is a cross-platform gamified ecosystem in late-stage development. The project expands classic media literacy to incorporate basic concepts of artificial intelligence algorithms, automated feed curation, and ethical digital citizenship. The solution will integrate digital authorship tools, allowing students to design their own digital literacy campaigns within their school.",
+      "status": "Product under development. Release scheduled for next semester.",
+      "mockup": {
+        "algorithms": "Recommendation Algorithms",
+        "letramento": "Algorithm Literacy",
+        "ecossistema": "Cross-platform gamified ecosystem."
+      }
+    }
+  },
+  "press": {
+    "title": "Press Room",
+    "subtitle": "Information hub, releases, and brand assets for journalists.",
+    "intro": "Welcome to the Literacia Edu press space. Here you can find our press releases, visual assets, and contacts for editorial pieces.",
+    "releasesTitle": "Recent Press Releases",
+    "noReleases": "No releases published at this time. To receive updates directly, please get in touch with our PR team.",
+    "downloadKit": "Download Media Kit",
+    "kitDesc": "Includes high-resolution transparent logos, brand identity manual, color palette, and official photos of the founder and pilot educational tests.",
+    "contactTitle": "Press Contacts",
+    "contactText": "Need a scientific expert to talk about child disinformation, media literacy, or cognitive psychology applied to education? Karoline Fernandes and our team are available for interviews, talks, and editorial consults.",
+    "contactEmail": "karoline@literaciaedu.com",
+    "contactPhone": "+55 81 99656-1408",
+    "releases": [
+      {
+        "date": "MAY/2026",
+        "category": "INSTITUTIONAL RELEASE",
+        "title": "Literacia Edu EdTech launches expanded version of anti-disinformation game in public networks.",
+        "desc": "Prebunking-based methodologies (Inoculation Theory) support educators in developing alert minds and reducing the spread of fake news."
+      },
+      {
+        "date": "MAR/2026",
+        "category": "FUNDING & ACCELERATION",
+        "title": "Science-based media literacy gains prominence and support from SUDENE Fund.",
+        "desc": "Financial support will enable national field tests and adaptation of the Meias#Verdades game for the Latin American market."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Questions, business partnership inquiries, investment proposals, or school solutions adoptions. We are ready to answer.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Phone / WhatsApp",
+    "hoursLabel": "Office Hours",
+    "hours": "Monday to Friday, 9am to 6pm",
+    "resetButton": "Send new message",
+    "validation": {
+      "nameRequired": "Name is required",
+      "institutionRequired": "Institution is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "messageRequired": "Message is required"
+    },
+    "form": {
+      "name": "Your full name *",
+      "institution": "Name of Institution / School / Fund *",
+      "role": "Your role or field",
+      "email": "Contact email *",
+      "phone": "Phone / WhatsApp",
+      "message": "Your message (describe your needs or interests) *",
+      "namePlaceholder": "E.g., Maria Smith",
+      "institutionPlaceholder": "E.g., Anglo School / Grow Capital",
+      "rolePlaceholder": "E.g., Head of Education / Angel Investor",
+      "emailPlaceholder": "E.g., maria.smith@school.com",
+      "phonePlaceholder": "E.g., +55 (81) 99999-9999",
+      "messagePlaceholder": "Describe how we can collaborate..."
+    },
+    "status": {
+      "successTitle": "Message sent successfully!",
+      "successText": "Thank you for reaching out. Our partnership and science team will review your inquiry and reply within 24 business hours.",
+      "errorTitle": "Failed to send",
+      "errorText": "A temporary technical issue occurred while sending your message. Please try again or email us directly at karoline@literaciaedu.com."
+    },
+    "infoTitle": "Direct Channels",
+    "addressTitle": "Headquarters",
+    "addressText": "Recife, Pernambuco - Brazil. Tech and Innovation Hub at Porto Digital."
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "common": {
+    "cta": {
+      "solutions": "Conheça nossas soluções",
+      "contact": "Fale conosco",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "more": "Saiba mais",
+      "backToHome": "Voltar para a Home",
+      "underDevelopment": "Em desenvolvimento"
+    },
+    "languages": {
+      "pt": "Português",
+      "en": "English",
+      "es": "Español"
+    },
+    "nav": {
+      "home": "Início",
+      "about": "Quem Somos",
+      "solutions": "Soluções",
+      "press": "Imprensa",
+      "contact": "Contato"
+    },
+    "footer": {
+      "description": "Educação, Ciência e Letramento Digital para o Amanhã. Uma EdTech focada em pensamento crítico e resiliência digital de crianças e adolescentes.",
+      "about": "Sobre",
+      "solutions": "Soluções",
+      "press": "Imprensa",
+      "contact": "Contato",
+      "legal": "Legal",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso",
+      "rights": "© 2026 Literacia Edu. Todos os direitos reservados. CNPJ: 54.896.712/0001-92.",
+      "followUs": "Siga-nos"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Educação, Ciência e Letramento Digital para o Amanhã",
+      "subtitle": "Desenvolvemos soluções educacionais baseadas em evidências científicas para fortalecer o pensamento crítico, a cidadania digital e a resiliência de crianças e adolescentes diante dos desafios da era da informação.",
+      "badge": "EdTech baseada em evidências",
+      "mockup": {
+        "letramento": "Letramento Midiático",
+        "desc": "Ensinando jovens a identificar desinformação por meio de mecânicas de inoculação ativa."
+      }
+    },
+    "impact": {
+      "title": "Nosso Impacto em Números",
+      "subtitle": "Pesquisa de ponta e tecnologia a serviço da educação digital.",
+      "items": [
+        {
+          "value": "100%",
+          "label": "Base Científica",
+          "desc": "Metodologias validadas academicamente"
+        },
+        {
+          "value": "+5.000",
+          "label": "Jovens Impactados",
+          "desc": "Estudantes em projetos-piloto"
+        },
+        {
+          "value": "15+",
+          "label": "Prêmios e Editais",
+          "desc": "Apoio governamental e internacional"
+        },
+        {
+          "value": "3",
+          "label": "Idiomas",
+          "desc": "Preparado para escala global"
+        }
+      ]
+    },
+    "importance": {
+      "title": "Por que isso importa?",
+      "subtitle": "O ambiente digital apresenta riscos invisíveis que afetam o aprendizado e o bem-estar dos jovens. Nós agimos na causa.",
+      "kicker": "Combate à desinformação",
+      "items": [
+        {
+          "title": "Desinformação e Fake News",
+          "desc": "A proliferação de notícias falsas mina a confiança pública e induz jovens a erros graves. Ensinamos a ler por trás do clique."
+        },
+        {
+          "title": "Radicalização Digital",
+          "desc": "Algoritmos criam bolhas que podem expor adolescentes a discursos extremistas e de ódio. Promovemos a resiliência a essas manipulações."
+        },
+        {
+          "title": "Pensamento Crítico",
+          "desc": "Mais do que usar ferramentas, os jovens precisam saber questionar fontes, intenções e o contexto do que consomem online."
+        },
+        {
+          "title": "Segurança Digital",
+          "desc": "Capacitamos a nova geração a navegar com autonomia, protegendo sua privacidade e mantendo relações saudáveis nas redes."
+        }
+      ]
+    },
+    "solutions": {
+      "title": "Nossas Soluções",
+      "subtitle": "Combinação única de jogos sérios, psicologia cognitiva e design centrado no estudante.",
+      "kicker": "Tecnologia e Gamificação",
+      "items": {
+        "meiasVerdades": {
+          "title": "Meias#Verdades",
+          "desc": "Um jogo mobile educativo revolucionário baseado na Teoria da Inoculação (prebunking). Os jovens aprendem as técnicas da desinformação jogando como criadores de conteúdo, construindo 'anticorpos mentais' contra a manipulação online.",
+          "badge": "Jogo Mobile",
+          "support": "Apoio: KU Leuven"
+        },
+        "meiasVerdadesMemory": {
+          "title": "Jogo da Memória Meias#Verdades",
+          "desc": "Uma experiência física e dinâmica (offline) criada para salas de aula e dinâmicas de grupo. Fomenta o debate presencial, estimula a cooperação e introduz conceitos essenciais de segurança e letramento midiático.",
+          "badge": "Offline / Sala de Aula",
+          "alignment": "BNCC Alinhado"
+        },
+        "codigoPata": {
+          "title": "Código P.A.T.A.",
+          "desc": "Nossa próxima plataforma digital em desenvolvimento. Um ecossistema gamificado completo para escolas que expande as habilidades de letramento computacional e media literacy para o ensino fundamental II.",
+          "badge": "Em desenvolvimento",
+          "launch": "Lançamento no próximo semestre."
+        }
+      }
+    },
+    "methodology": {
+      "title": "A Ciência por trás da Metodologia",
+      "subtitle": "Não usamos achismos. Nosso ecossistema de aprendizagem é construído sobre pilares científicos consolidados.",
+      "kicker": "Metodologia baseada em dados",
+      "cards": [
+        {
+          "title": "Inoculação",
+          "desc": "Metodologia de \"vacina mental\" para desarmar manipulações."
+        },
+        {
+          "title": "Jogos Sérios",
+          "desc": "A mecânica lúdica convertida em retenção de aprendizado."
+        },
+        {
+          "title": "Microlearning",
+          "desc": "Aulas fracionadas de alta absorção para o público infanto-juvenil."
+        },
+        {
+          "title": "Evidências",
+          "desc": "Análises de comportamento cientificamente quantificáveis."
+        }
+      ],
+      "items": [
+        {
+          "title": "Jogos Sérios (Serious Games)",
+          "desc": "A aprendizagem baseada em jogos ativa o engajamento emocional e cognitivo profundo, garantindo que o aprendizado seja retido a longo prazo."
+        },
+        {
+          "title": "Teoria da Inoculação",
+          "desc": "Como uma vacina médica, expomos os estudantes a doses enfraquecidas de técnicas de manipulação digital para que saibam reconhecê-las e rejeitá-las no mundo real."
+        },
+        {
+          "title": "Microlearning",
+          "desc": "Conteúdo quebrado em microdoses altamente focadas, adequadas ao ritmo e à atenção dos adolescentes modernos."
+        },
+        {
+          "title": "Ciência da Informação & Psicologia",
+          "desc": "Análise rigorosa do comportamento informacional humano e processos cognitivos de tomada de decisão em redes digitais."
+        }
+      ]
+    },
+    "founder": {
+      "title": "Liderança e Base Científica",
+      "subtitle": "Nascida na academia, projetada para o mundo.",
+      "name": "Karoline Fernandes",
+      "role": "Fundadora e Diretora de Pesquisa",
+      "roleLabel": "Doutora em Letramento Midiático",
+      "bio": "Doutora com sólida trajetória de pesquisa científica em Letramento Midiático e Informacional, Karoline Fernandes lidera a Literacia Edu com uma visão clara: transformar pesquisas científicas de ponta em soluções práticas de alto impacto social. Com experiência internacional de pesquisa na KU Leuven (Bélgica) e projetos apoiados pela SUDENE, ela coordena o desenvolvimento do jogo Meias#Verdades e lidera a expansão nacional e internacional da startup.",
+      "quote": "\"Nossa missão é dar às crianças e adolescentes os anticorpos cognitivos necessários para que naveguem na internet com independência e segurança.\""
+    },
+    "partners": {
+      "title": "Parceiros Institucionais e Apoio",
+      "types": {
+        "academic": "Acadêmico",
+        "research": "Pesquisa Internacional",
+        "acceleration": "Fomento / Aceleração",
+        "government": "Governo / Projetos"
+      }
+    },
+    "press": {
+      "title": "Literacia Edu na Mídia",
+      "subtitle": "Acompanhe nossa trajetória, entrevistas e cobertura de imprensa.",
+      "kicker": "Sala de Comunicação",
+      "noNews": "Nenhuma notícia publicada ainda. Para solicitações de entrevistas e releases, acesse nossa área de imprensa.",
+      "readMore": "Ler reportagem",
+      "articles": [
+        {
+          "category": "ARTIGO ACADÊMICO",
+          "date": "OUT/2025",
+          "title": "Teoria da Inoculação aplicada ao letramento de fake news: Um estudo sobre o game Meias#Verdades.",
+          "desc": "Análise do impacto cognitivo em estudantes de escolas parceiras do Nordeste do Brasil.",
+          "source": "KU Leuven Research"
+        },
+        {
+          "category": "NOTÍCIAS DE ACELERAÇÃO",
+          "date": "JAN/2026",
+          "title": "SUDENE apoia expansão do letramento midiático nas redes escolares de Pernambuco.",
+          "desc": "Startup Literacia Edu recebe aporte de aceleração para escalar jogos mobile educativos.",
+          "source": "Sudene Notícias"
+        },
+        {
+          "category": "FESTIVAL DE JOGOS",
+          "date": "MAI/2026",
+          "title": "Meias#Verdades concorre a prêmio de melhor jogo educativo do ano em congresso.",
+          "desc": "O simulador de mídias sociais gamificado recebe reconhecimento técnico pela interatividade e design.",
+          "source": "Congresso SBGames"
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "Preparando cidadãos para a era digital",
+      "subtitle": "Junte-se a nós na missão de formar uma geração mais crítica, segura e resiliente às mentiras digitais. Vamos conversar?",
+      "button": "Seja um parceiro"
+    }
+  },
+  "about": {
+    "title": "Quem Somos",
+    "subtitle": "Transformando evidências científicas em escudos contra a desinformação.",
+    "historyTitle": "Nossa História",
+    "historyDesc": "A Literacia Edu nasceu como um projeto de pesquisa acadêmica focado em resolver um dos maiores problemas da era contemporânea: a vulnerabilidade das novas gerações a fake news, desinformação e radicalização nos meios digitais. Liderada pela pesquisadora Karoline Fernandes, a iniciativa evoluiu de teses acadêmicas e testes em laboratório para se tornar uma EdTech brasileira de impacto social. Hoje, unimos universidades nacionais e internacionais para levar letramento midiático a escolas públicas e privadas, provando que a ciência e a educação lúdica são os melhores caminhos para construir um amanhã saudável nas redes.",
+    "mission": {
+      "title": "Nossa Missão",
+      "desc": "Capacitar crianças e adolescentes a desenvolverem pensamento crítico e resiliência digital, fornecendo ferramentas educacionais inovadoras baseadas em evidências científicas."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "desc": "Ser a principal referência global em soluções educacionais de combate à desinformação infantil e juvenil até 2030, integrando tecnologia, psicologia e ciência."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "items": [
+        {
+          "title": "Rigor Científico",
+          "desc": "Todas as nossas metodologias e jogos são baseados em pesquisas científicas ativas e validadas."
+        },
+        {
+          "title": "Inovação Educacional",
+          "desc": "Criamos experiências de aprendizado que de fato conversam com o público jovem por meio da gamificação."
+        },
+        {
+          "title": "Ética e Transparência",
+          "desc": "Promovemos a verdade, a privacidade de dados e a responsabilidade social em todos os projetos."
+        },
+        {
+          "title": "Inclusão Social",
+          "desc": "Trabalhamos ativamente para que nossas ferramentas cheguem tanto a redes privadas quanto a redes públicas de ensino."
+        }
+      ]
+    },
+    "scienceTitle": "A Ciência do Letramento Midiático",
+    "scienceDesc1": "Nossa principal fundação metodológica reside na Teoria da Inoculação Psicológica (Inoculation Theory), popularizada na comunicação digital como Prebunking. Em termos simples, assim como uma vacina médica introduz um vírus atenuado para preparar o sistema imunológico, nossos jogos apresentam aos usuários, de forma controlada e lúdica, os mecanismos de manipulação (como apelo emocional, falsos dilemas e bodes expiatórios).",
+    "scienceDesc2": "Ao aprender a criar e reconhecer essas técnicas jogando, o jovem desenvolve resistência cognitiva. Dessa forma, quando ele se depara com uma tentativa de desinformação real em suas redes sociais cotidianas, ele a identifica de imediato e rejeita o compartilhamento impulsivo.",
+    "founderTitle": "Nossa Fundadora",
+    "scienceKicker": "Embasamento Acadêmico",
+    "vacinaTitle": "Vacina Cognitiva",
+    "vacinaDesc": "O letramento midiático na Literacia Edu não é passivo. Baseado na Teoria da Inoculação, ensinamos técnicas de manipulação antes que os jovens as sofram.",
+    "inoculacaoTitle": "Teoria da Inoculação",
+    "inoculacaoDesc": "Como uma vacina que estimula defesas internas, apresentamos técnicas de fake news de modo simplificado para desenvolver anticorpos de pensamento crítico.",
+    "directorLabel": "Diretoria de Ciência",
+    "timeline": {
+      "title": "Nossa Trajetória Científica",
+      "items": [
+        {
+          "year": "2022",
+          "title": "Origem na Pesquisa",
+          "desc": "Início do desenvolvimento conceitual das soluções de letramento midiático na UFPE."
+        },
+        {
+          "year": "2023",
+          "title": "Conexão Internacional",
+          "desc": "Karoline Fernandes realiza pesquisa internacional na prestigiada KU Leuven, na Bélgica, refinando o modelo da Teoria da Inoculação."
+        },
+        {
+          "year": "2024",
+          "title": "Apoios Governamentais",
+          "desc": "Aceleração pelo edital da SUDENE e testes de campo em escolas públicas do estado de Pernambuco, com forte impacto positivo."
+        },
+        {
+          "year": "2025",
+          "title": "Fundação e Lançamento",
+          "desc": "Estruturação formal da Literacia Edu como EdTech comercial e expansão do portfólio de jogos móveis e físicos."
+        }
+      ]
+    }
+  },
+  "solutions": {
+    "title": "Nossas Soluções Educacionais",
+    "subtitle": "Gamificação inteligente para desenvolver mentes alertas e resilientes.",
+    "cta": {
+      "title": "Quer ver de perto em sua escola ou instituição?",
+      "desc": "Oferecemos programas-piloto guiados e consultorias pedagógicas completas para secretarias de educação e redes escolares.",
+      "button": "Fale com nossa equipe"
+    },
+    "meiasVerdades": {
+      "title": "Jogo Mobile Meias#Verdades",
+      "subtitle": "Uma vacina cognitiva contra a desinformação nas redes sociais.",
+      "featuresTitle": "Funcionalidades e Benefícios",
+      "features": [
+        "Simulador de Redes Sociais integrado em ambiente seguro.",
+        "Roleplay educativo: o estudante joga do ponto de vista do criador de conteúdo malicioso para compreender as mecânicas por dentro.",
+        "Módulos baseados em técnicas reais: uso de robôs, apelos emocionais excessivos, teorias da conspiração e polarização artificial.",
+        "Métricas de progresso em letramento midiático em tempo real para educadores."
+      ],
+      "audience": "Recomendado para Ensino Fundamental II e Ensino Médio (11 a 17 anos).",
+      "mockup": {
+        "module": "MÓDULO 01",
+        "quote": "\"Compartilhe esta mentira para ganhar pontos de engajamento.\"",
+        "desc": "O jogo desafia o aluno a criar posts com apelo emocional ou bodes expiatórios para ensinar os riscos por trás do clique fácil.",
+        "identify": "Identificar Técnica",
+        "skip": "Pular"
+      }
+    },
+    "memoryGame": {
+      "title": "Jogo da Memória Meias#Verdades (Offline)",
+      "subtitle": "Letramento midiático presencial, dinâmico e cooperativo.",
+      "featuresTitle": "Por que utilizar em sala de aula?",
+      "features": [
+        "Perfeito para escolas com restrições de uso de smartphones em sala de aula.",
+        "Promove o diálogo presencial mediado pelo professor, desenvolvendo soft skills como cooperação e argumentação.",
+        "Baralho de cartas com ilustrações exclusivas e situações-problema reais adaptadas para debate coletivo.",
+        "Guia completo do professor para alinhamento com a BNCC (competências 4 e 5)."
+      ],
+      "audience": "Recomendado para Ensino Fundamental I e II (8 a 14 anos).",
+      "mockup": {
+        "boardGame": "Jogo de Tabuleiro e Cartas",
+        "desc": "Interação presencial para debates profundos.",
+        "meias": "MEIAS",
+        "meiasDesc": "Robôs digitais",
+        "verdades": "#VERDADES",
+        "verdadesDesc": "Fake News",
+        "edu": "EDU",
+        "eduDesc": "Cidadania"
+      }
+    },
+    "codigoPata": {
+      "title": "Código P.A.T.A.",
+      "subtitle": "A fronteira futura do letramento midiático.",
+      "desc": "O Código P.A.T.A. é um ecossistema gamificado multiplataforma em estágio avançado de desenvolvimento. O projeto expande o letramento midiático clássico para incorporar noções de algoritmos de inteligência artificial, curadoria de feeds automatizados e cidadania digital ética. A solução integrará ferramentas de autoria digital para que os próprios alunos criem suas campanhas de letramento na escola.",
+      "status": "Produto em desenvolvimento. Lançamento previsto para o próximo semestre.",
+      "mockup": {
+        "algorithms": "Algoritmos de Recomendação",
+        "letramento": "Letramento de Algoritmos",
+        "ecossistema": "Ecossistema gamificado multiplataforma."
+      }
+    }
+  },
+  "press": {
+    "title": "Sala de Imprensa",
+    "subtitle": "Central de informações, releases e recursos de marca para jornalistas.",
+    "intro": "Bem-vindo ao espaço de comunicação da Literacia Edu. Disponibilizamos aqui nossos comunicados de imprensa, recursos visuais e contatos para reportagens.",
+    "releasesTitle": "Press Releases Recentes",
+    "noReleases": "Nenhum comunicado publicado no momento. Para receber informações em primeira mão, envie uma mensagem para nossa equipe de assessoria.",
+    "downloadKit": "Baixar Kit de Marca (Media Kit)",
+    "kitDesc": "Contém logotipos transparentes em alta resolução, manual de marca completo, paleta de cores e fotografias institucionais da fundadora e dos testes pedagógicos.",
+    "contactTitle": "Contato de Imprensa",
+    "contactText": "Precisa de uma fonte acadêmica especialista em desinformação infantil, letramento midiático ou psicologia cognitiva aplicada à educação? Karoline Fernandes e nossa equipe estão disponíveis para entrevistas, palestras e consultoria de pautas.",
+    "contactEmail": "karoline@literaciaedu.com",
+    "contactPhone": "+55 81 99656-1408",
+    "releases": [
+      {
+        "date": "MAI/2026",
+        "category": "RELEASE INSTITUCIONAL",
+        "title": "EdTech Literacia Edu lança versão expandida de jogo de combate a desinformação em redes públicas.",
+        "desc": "Metodologias baseadas em prebunking (Teoria da Inoculação) apoiam educadores a desenvolver mentes alertas e diminuir a proliferação de notícias falsas."
+      },
+      {
+        "date": "MAR/2026",
+        "category": "APORTES & ACELERAÇÃO",
+        "title": "Letramento midiático de base científica ganha destaque e apoio do Fundo da SUDENE.",
+        "desc": "Aporte financeiro viabilizará testes de campo nacionais e adaptação do jogo Meias#Verdades para o mercado latino-americano."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "subtitle": "Dúvidas, propostas de parcerias comerciais, captação de investimento ou adoção de soluções em escolas. Estamos prontos para responder.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefone / WhatsApp",
+    "hoursLabel": "Atendimento",
+    "hours": "Segunda a Sexta, das 9h às 18h",
+    "resetButton": "Enviar nova mensagem",
+    "validation": {
+      "nameRequired": "Nome é obrigatório",
+      "institutionRequired": "Instituição é obrigatória",
+      "emailRequired": "E-mail é obrigatório",
+      "emailInvalid": "E-mail inválido",
+      "messageRequired": "Mensagem é obrigatória"
+    },
+    "form": {
+      "name": "Seu nome completo *",
+      "institution": "Nome da Instituição / Escola / Fundo *",
+      "role": "Seu cargo ou área de atuação",
+      "email": "E-mail de contato profissional *",
+      "phone": "Telefone / WhatsApp",
+      "message": "Sua mensagem (descreva suas necessidades ou interesses) *",
+      "namePlaceholder": "Ex: Maria Silva",
+      "institutionPlaceholder": "Ex: Colégio Anglo / Fundo Crescer",
+      "rolePlaceholder": "Ex: Diretora Pedagógica / Investidor Anjo",
+      "emailPlaceholder": "Ex: maria.silva@escola.com.br",
+      "phonePlaceholder": "Ex: (81) 99999-9999",
+      "messagePlaceholder": "Escreva aqui como podemos colaborar..."
+    },
+    "status": {
+      "successTitle": "Mensagem enviada com sucesso!",
+      "successText": "Agradecemos o seu contato. Nossa equipe de parcerias e ciência analisará sua mensagem e responderá em até 24 horas úteis.",
+      "errorTitle": "Falha no envio",
+      "errorText": "Houve um erro técnico temporário ao tentar enviar sua mensagem. Por favor, tente novamente ou mande um e-mail direto para karoline@literaciaedu.com."
+    },
+    "infoTitle": "Canais Diretos",
+    "addressTitle": "Sede Administrativa",
+    "addressText": "Recife, Pernambuco - Brasil. Polo de Tecnologia e Inovação do Porto Digital."
+  }
+}
