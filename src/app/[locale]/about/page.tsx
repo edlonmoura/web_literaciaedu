@@ -196,17 +196,6 @@ export default async function AboutPage({ params }: AboutPageProps) {
           <div className="lg:col-span-5 flex justify-center">
             <FadeIn direction="left" className="w-full max-w-xs">
               <div className="relative">
-                <SwayingFloat duration={5} sway={3} lift={5}>
-                  <div className="absolute -top-12 -right-8 z-20 relative w-20 h-20 opacity-85">
-                    <Image
-                      src="/images/logofolio_literacia.png"
-                      alt="Literacia Edu"
-                      fill
-                      className="object-contain"
-                      sizes="80px"
-                    />
-                  </div>
-                </SwayingFloat>
                 <div className="relative aspect-[4/5] w-full bg-navy-deep border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/fundadora.png"

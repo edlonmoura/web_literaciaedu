@@ -125,7 +125,7 @@ export default async function HomePage({ params }: HomePageProps) {
                     {/* Brand Symbol Fox Placeholder */}
                     <div className="relative w-40 h-40 opacity-90 transition-transform duration-300 group-hover:scale-105 -mt-12">
                       <Image
-                        src="/images/logofolio_literacia.png"
+                        src="/images/logo_literacia.png"
                         alt="Literacia Edu Fox Symbol"
                         fill
                         className="object-contain"
@@ -193,7 +193,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <SwayingFloat duration={5.5} sway={4} lift={6} className="absolute top-10 right-20 hidden lg:block">
           <div className="relative w-56 h-56 opacity-60">
             <Image
-              src="/images/logofolio_literacia.png"
+              src="/images/logo_literacia.png"
               alt="Literacia Edu"
               fill
               className="object-contain"
@@ -258,7 +258,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <SwayingFloat duration={6} sway={3} lift={4} className="absolute top-12 left-20 hidden lg:block z-10">
           <div className="relative w-40 h-40 opacity-40">
             <Image
-              src="/images/logofolio_literacia.png"
+              src="/images/logo_literacia.png"
               alt="Literacia Edu"
               fill
               className="object-contain"
@@ -405,7 +405,7 @@ export default async function HomePage({ params }: HomePageProps) {
               <SwayingFloat duration={5} sway={3} lift={5}>
                 <div className="relative w-48 h-48 opacity-60">
                   <Image
-                    src="/images/logofolio_literacia.png"
+                    src="/images/logo_literacia.png"
                     alt="Literacia Edu"
                     fill
                     className="object-contain"
@@ -488,7 +488,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <SwayingFloat duration={5} sway={3} lift={4} className="hidden lg:block shrink-0">
               <div className="relative w-32 h-32 opacity-60">
                 <Image
-                  src="/images/logofolio_literacia.png"
+                  src="/images/logo_literacia.png"
                   alt="Literacia Edu"
                   fill
                   className="object-contain"
