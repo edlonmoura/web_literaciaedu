@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import { Locale } from "@/lib/get-dictionary"
+import { validLocale } from "@/lib/get-dictionary"
 
 export async function generateMetadata({
   params,
@@ -58,7 +58,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const activeLocale = (locale as Locale) || "pt"
+  const activeLocale = validLocale(locale)
 
   return (
     <>

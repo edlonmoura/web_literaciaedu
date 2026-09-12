@@ -6,7 +6,6 @@ interface ContactFormData {
   institution: string
   role: string
   email: string
-  phone: string
   message: string
 }
 
@@ -15,7 +14,6 @@ const MAX_LENGTHS = {
   institution: 150,
   role: 100,
   email: 254,
-  phone: 20,
   message: 2000,
 } as const
 
@@ -68,7 +66,6 @@ function buildEmailHtml(data: ContactFormData): string {
     institution: escapeHtml(data.institution),
     role: escapeHtml(data.role),
     email: escapeHtml(data.email),
-    phone: escapeHtml(data.phone),
     message: escapeHtml(data.message),
   }
 
@@ -118,13 +115,6 @@ function buildEmailHtml(data: ContactFormData): string {
                         <p style="margin:0;"><a href="mailto:${safe.email}" style="color:#056B6E;font-size:15px;text-decoration:none;">${safe.email}</a></p>
                       </td>
                     </tr>
-                    ${data.phone ? `
-                    <tr>
-                      <td style="padding-bottom:24px;">
-                        <p style="margin:0 0 6px;color:#0B1E21;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Telefone</p>
-                        <p style="margin:0;color:#0B1E21;font-size:15px;">${safe.phone}</p>
-                      </td>
-                    </tr>` : ''}
                     <tr>
                       <td style="padding-bottom:8px;">
                         <p style="margin:0 0 6px;color:#0B1E21;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Mensagem</p>
@@ -170,7 +160,6 @@ export async function POST(request: NextRequest) {
       institution: trimAndLimit(rawBody.institution, MAX_LENGTHS.institution),
       role: trimAndLimit(rawBody.role, MAX_LENGTHS.role),
       email: trimAndLimit(rawBody.email, MAX_LENGTHS.email),
-      phone: trimAndLimit(rawBody.phone, MAX_LENGTHS.phone),
       message: trimAndLimit(rawBody.message, MAX_LENGTHS.message),
     }
 
@@ -201,7 +190,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY)
     const { error } = await resend.emails.send({
       from: 'Literacia Edu <onboarding@resend.dev>',
-      to: 'karoline@literaciaedu.com',
+      to: 'contato@literaciaedu.com.br',
       replyTo: body.email,
       subject: safeSubject,
       html: buildEmailHtml(body),

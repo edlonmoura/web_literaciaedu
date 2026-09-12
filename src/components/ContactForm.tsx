@@ -9,13 +9,11 @@ interface ContactFormProps {
     institution: string
     role: string
     email: string
-    phone: string
     message: string
     namePlaceholder: string
     institutionPlaceholder: string
     rolePlaceholder: string
     emailPlaceholder: string
-    phonePlaceholder: string
     messagePlaceholder: string
   }
   statusLabels: {
@@ -24,22 +22,31 @@ interface ContactFormProps {
     errorTitle: string
     errorText: string
   }
+  validationLabels: {
+    nameRequired: string
+    institutionRequired: string
+    emailRequired: string
+    emailInvalid: string
+    messageRequired: string
+  }
   submitLabel: string
   sendingLabel: string
+  sendNewMessageLabel: string
 }
 
 export default function ContactForm({
   labels,
   statusLabels,
+  validationLabels,
   submitLabel,
   sendingLabel,
+  sendNewMessageLabel,
 }: ContactFormProps) {
   const [formData, setFormData] = useState({
     name: "",
     institution: "",
     role: "",
     email: "",
-    phone: "",
     message: "",
   })
   
@@ -48,14 +55,14 @@ export default function ContactForm({
 
   const validate = () => {
     const tempErrors: Record<string, string> = {}
-    if (!formData.name.trim()) tempErrors.name = "Nome é obrigatório"
-    if (!formData.institution.trim()) tempErrors.institution = "Instituição é obrigatória"
+    if (!formData.name.trim()) tempErrors.name = validationLabels.nameRequired
+    if (!formData.institution.trim()) tempErrors.institution = validationLabels.institutionRequired
     if (!formData.email.trim()) {
-      tempErrors.email = "E-mail é obrigatório"
+      tempErrors.email = validationLabels.emailRequired
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      tempErrors.email = "E-mail inválido"
+      tempErrors.email = validationLabels.emailInvalid
     }
-    if (!formData.message.trim()) tempErrors.message = "Mensagem é obrigatória"
+    if (!formData.message.trim()) tempErrors.message = validationLabels.messageRequired
     
     setErrors(tempErrors)
     return Object.keys(tempErrors).length === 0
@@ -99,7 +106,6 @@ export default function ContactForm({
         institution: "",
         role: "",
         email: "",
-        phone: "",
         message: "",
       })
     } catch (err) {
@@ -126,7 +132,7 @@ export default function ContactForm({
           onClick={() => setStatus("idle")}
           className="mt-4 px-6 py-2.5 bg-primary-teal text-white rounded-xl font-semibold text-sm hover:bg-bright-teal transition-colors"
         >
-          Enviar nova mensagem
+          {sendNewMessageLabel}
         </button>
       </div>
     )
@@ -250,22 +256,6 @@ export default function ContactForm({
         </div>
       </div>
 
-      {/* Phone */}
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="phone" className="text-sm font-semibold text-[#0B1E21]/90">
-          {labels.phone}
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder={labels.phonePlaceholder}
-          className="w-full px-4 py-3 rounded-xl border border-primary-teal/15 bg-white focus:outline-none focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10 transition-all duration-200 text-sm"
-        />
-      </div>
-
       {/* Message */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="text-sm font-semibold text-[#0B1E21]/90">
@@ -297,7 +287,7 @@ export default function ContactForm({
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full inline-flex items-center justify-center gap-2 bg-primary-teal text-white font-semibold py-4 rounded-xl hover:bg-bright-teal transition-all duration-300 shadow-md shadow-primary-teal/10 disabled:bg-primary-teal/50 disabled:cursor-not-allowed text-sm focus:ring-2 focus:ring-bright-teal/20"
+        className="w-full inline-flex items-center justify-center gap-2 bg-brand-yellow text-[#05242A] font-bold py-4 rounded-xl hover:bg-primary-teal hover:text-white transition-all duration-300 shadow-md shadow-brand-yellow/20 disabled:bg-brand-yellow/50 disabled:cursor-not-allowed text-sm focus:ring-2 focus:ring-bright-teal/20 hover:-translate-y-0.5"
       >
         <Send className="w-4 h-4" />
         {status === "sending" ? sendingLabel : submitLabel}

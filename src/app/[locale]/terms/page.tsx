@@ -1,4 +1,4 @@
-import { Locale } from "@/lib/get-dictionary"
+import { validLocale } from "@/lib/get-dictionary"
 import { FadeIn } from "@/components/InteractiveComponents"
 
 interface LegalPageProps {
@@ -11,20 +11,26 @@ export function generateStaticParams() {
 
 export default async function TermsPage({ params }: LegalPageProps) {
   const { locale } = await params
-  const activeLocale = (locale as Locale) || "pt"
+  const activeLocale = validLocale(locale)
   const isPt = activeLocale === "pt"
   const isEn = activeLocale === "en"
 
   const title = isPt ? "Termos de Uso" : isEn ? "Terms of Service" : "Términos de Uso"
 
   return (
-    <div className="relative w-full overflow-hidden bg-white py-16 px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto flex flex-col gap-8">
-        <FadeIn direction="up">
-          <h1 className="text-3xl sm:text-4xl font-sans font-bold text-primary-teal">{title}</h1>
-        </FadeIn>
-        
-        <FadeIn direction="up" delay={0.1} className="prose prose-teal max-w-none text-sm leading-relaxed text-[#0B1E21]/80 font-sans flex flex-col gap-6 font-light">
+    <div className="relative w-full overflow-hidden bg-[#F4F8F9]">
+      {/* HEADER */}
+      <section className="relative pt-32 pb-16 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
+        <div className="max-w-4xl mx-auto text-center flex flex-col gap-4">
+          <FadeIn direction="up">
+            <h1 className="text-3xl sm:text-4xl font-sans font-bold text-white">{title}</h1>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* CONTENT DOCUMENT CARD */}
+      <section className="py-20 px-6 lg:px-8 max-w-4xl mx-auto">
+        <FadeIn direction="up" delay={0.1} className="bg-white/95 backdrop-blur-md border border-primary-teal/10 rounded-3xl p-8 md:p-12 shadow-xl prose prose-teal max-w-none text-sm leading-relaxed text-[#0B1E21]/80 font-sans flex flex-col gap-6 font-light">
           {isPt ? (
             <>
               <p>
@@ -69,7 +75,8 @@ export default async function TermsPage({ params }: LegalPageProps) {
             </>
           )}
         </FadeIn>
-      </div>
+      </section>
     </div>
   )
 }
+

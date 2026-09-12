@@ -1,6 +1,13 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  display: "swap",
+})
 
 const sawah = localFont({
   src: "../../public/fonts/SawahPersonalUse-RpAYA.otf",
@@ -63,10 +70,11 @@ export default function RootLayout({
   return (
     <html lang="pt" className="scroll-smooth">
       <body
-        className={`${poppins.variable} ${sawah.variable} ${spaceboards.variable} font-sans bg-white text-[#0B1E21] antialiased min-h-screen flex flex-col`}
+        className={`${jakarta.variable} ${poppins.variable} ${sawah.variable} ${spaceboards.variable} font-sans bg-[#F4F8F9] text-[#0B1E21] antialiased min-h-screen flex flex-col`}
       >
         {children}
       </body>
     </html>
   )
 }
+

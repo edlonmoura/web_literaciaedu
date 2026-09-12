@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, Phone, MapPin } from "lucide-react"
-import { Locale } from "@/lib/get-dictionary"
+import { Mail, MapPin } from "lucide-react"
+import type { Locale } from "@/lib/get-dictionary"
 
 interface FooterProps {
   locale: Locale
@@ -31,7 +31,7 @@ export default function Footer({ locale }: FooterProps) {
       privacy: "Política de Privacidade",
       terms: "Termos de Uso",
       rights: "© 2026 Literacia Edu. Todos os direitos reservados. CNPJ: 54.896.712/0001-92.",
-      address: "Recife, PE - Brasil",
+      address: "Rua Dona Maria César, n. 170, cx pst 0203, Bairro do Recife - Recife - PE",
     },
     en: {
       desc: "Education, Science, and Digital Literacy for Tomorrow. Edtech focused on developing digital resilience and critical thinking in children and teens.",
@@ -45,7 +45,7 @@ export default function Footer({ locale }: FooterProps) {
       privacy: "Privacy Policy",
       terms: "Terms of Service",
       rights: "© 2026 Literacia Edu. All rights reserved. CNPJ: 54.896.712/0001-92.",
-      address: "Recife, PE - Brazil",
+      address: "Rua Dona Maria César, n. 170, cx pst 0203, Bairro do Recife - Recife - PE",
     },
     es: {
       desc: "Educación, Ciencia y Alfabetización Digital para el Mañana. Edtech enfocada en desarrollar resiliencia digital y pensamiento crítico en niños y adolescentes.",
@@ -59,7 +59,7 @@ export default function Footer({ locale }: FooterProps) {
       privacy: "Política de Privacidad",
       terms: "Términos de Uso",
       rights: "© 2026 Literacia Edu. Todos los derechos reservados. CNPJ: 54.896.712/0001-92.",
-      address: "Recife, PE - Brasil",
+      address: "Rua Dona Maria César, n. 170, cx pst 0203, Bairro do Recife - Recife - PE",
     },
   }
 
@@ -67,8 +67,8 @@ export default function Footer({ locale }: FooterProps) {
   const homeLabel = locale === "pt" ? "Início" : locale === "en" ? "Home" : "Inicio"
 
   return (
-    <footer className="bg-navy-dark text-white border-t border-white/5 pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <footer className="bg-[#031417] text-white border-t border-white/10 pt-16 pb-12 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2 flex flex-col gap-6">
@@ -81,7 +81,7 @@ export default function Footer({ locale }: FooterProps) {
                 sizes="176px"
               />
             </Link>
-            <p className="text-white/70 text-[14px] leading-relaxed max-w-sm">
+            <p className="text-white/80 text-[14px] leading-relaxed max-w-sm font-sans font-light">
               {labels.desc}
             </p>
             {/* Social Icons */}
@@ -90,27 +90,27 @@ export default function Footer({ locale }: FooterProps) {
                 href="https://instagram.com/literaciaedu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-bright-teal hover:text-white transition-all duration-300 group"
+                className="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center hover:bg-bright-teal hover:border-bright-teal hover:text-white transition-all duration-300 group shadow-sm"
                 aria-label="Instagram @literaciaedu"
               >
-                <InstagramIcon className="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
+                <InstagramIcon className="w-5 h-5 text-white/90 group-hover:text-white transition-colors" />
               </a>
               <a
-                href="mailto:karoline@literaciaedu.com"
-                className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-bright-teal hover:text-white transition-all duration-300 group"
+                href="mailto:contato@literaciaedu.com.br"
+                className="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center hover:bg-bright-teal hover:border-bright-teal hover:text-white transition-all duration-300 group shadow-sm"
                 aria-label="E-mail Literacia Edu"
               >
-                <Mail className="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
+                <Mail className="w-5 h-5 text-white/90 group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>
 
           {/* Navigation links */}
           <div className="flex flex-col gap-5">
-            <h3 className="font-semibold text-white text-[14px] uppercase tracking-wider">
+            <h3 className="font-bold text-white text-[14px] uppercase tracking-wider font-sans">
               {labels.navTitle}
             </h3>
-            <ul className="flex flex-col gap-3 text-[14px] text-white/75">
+            <ul className="flex flex-col gap-3 text-[14px] text-white/80 font-sans">
               <li><Link href={`/${locale}`} className="hover:text-bright-teal transition-colors">{homeLabel}</Link></li>
               <li><Link href={`/${locale}/about`} className="hover:text-bright-teal transition-colors">{labels.about}</Link></li>
               <li><Link href={`/${locale}/solutions`} className="hover:text-bright-teal transition-colors">{labels.solutions}</Link></li>
@@ -120,10 +120,10 @@ export default function Footer({ locale }: FooterProps) {
 
           {/* Solutions links */}
           <div className="flex flex-col gap-5">
-            <h3 className="font-semibold text-white text-[14px] uppercase tracking-wider">
+            <h3 className="font-bold text-white text-[14px] uppercase tracking-wider font-sans">
               {labels.solutionsTitle}
             </h3>
-            <ul className="flex flex-col gap-3 text-[14px] text-white/75">
+            <ul className="flex flex-col gap-3 text-[14px] text-white/80 font-sans">
               <li><Link href={`/${locale}/solutions`} className="hover:text-bright-teal transition-colors">Meias#Verdades</Link></li>
               <li>
                 <Link href={`/${locale}/solutions`} className="hover:text-bright-teal transition-colors">
@@ -133,7 +133,7 @@ export default function Footer({ locale }: FooterProps) {
               <li>
                 <Link href={`/${locale}/solutions`} className="hover:text-bright-teal transition-colors flex items-center gap-1.5">
                   Código P.A.T.A.
-                  <span className="text-[10px] bg-white/10 px-1.5 py-0.5 rounded text-white/60 font-medium">DEV</span>
+                  <span className="text-[10px] bg-brand-yellow text-[#05242A] px-1.5 py-0.5 rounded font-bold">DEV</span>
                 </Link>
               </li>
             </ul>
@@ -141,30 +141,26 @@ export default function Footer({ locale }: FooterProps) {
 
           {/* Contact details */}
           <div className="flex flex-col gap-5">
-            <h3 className="font-semibold text-white text-[14px] uppercase tracking-wider">
+            <h3 className="font-bold text-white text-[14px] uppercase tracking-wider font-sans">
               {labels.contactTitle}
             </h3>
-            <ul className="flex flex-col gap-3.5 text-[14px] text-white/75">
+            <ul className="flex flex-col gap-3.5 text-[14px] text-white/80 font-sans">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-bright-teal shrink-0 mt-0.5" />
                 <span>{labels.address}</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-bright-teal shrink-0" />
-                <span>+55 81 99656-1408</span>
-              </li>
-              <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-bright-teal shrink-0" />
-                <span className="break-all">karoline@literaciaedu.com</span>
+                <span>contato@literaciaedu.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Divider and Copyright */}
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-white/50 text-xs">{labels.rights}</p>
-          <div className="flex items-center gap-6 text-xs text-white/55">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left font-sans">
+          <p className="text-white/60 text-xs">{labels.rights}</p>
+          <div className="flex items-center gap-6 text-xs text-white/70">
             <Link href={`/${locale}/privacy`} className="hover:text-bright-teal transition-colors">{labels.privacy}</Link>
             <Link href={`/${locale}/terms`} className="hover:text-bright-teal transition-colors">{labels.terms}</Link>
           </div>

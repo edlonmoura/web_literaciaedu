@@ -37,7 +37,7 @@
   "home": {
     "hero": {
       "title": "Educación, Ciencia y Alfabetización Digital para el Mañana",
-      "subtitle": "Desarrollamos soluciones educativas basadas en evidencia científica para fortalecer el pensamiento crítico, la ciudadanía digital y la resiliencia de niños y adolescentes frente a los desafíos de la era de la información.",
+      "subtitle": "Desarrollamos juegos y otras tecnologías educativas enfocadas en el desarrollo de habilidades socioemocionales y alfabetización mediática para fortalecer el pensamiento crítico, la ciudadanía digital y la resiliencia de niños y adolescentes frente a los desafíos de la era de la información.",
       "badge": "EdTech basada en evidencias",
       "mockup": {
         "letramento": "Alfabetización Mediática",
@@ -106,9 +106,14 @@
         },
         "meiasVerdadesMemory": {
           "title": "Juego de Memoria Meias#Verdades",
-          "desc": "Una experiencia física y dinámica (offline) diseñada para aulas y dinámicas de grupo. Fomenta el debate presencial, estimula la cooperación e introduce conceptos esenciales de seguridad y alfabetización mediática.",
+          "desc": "Nuestro equipo desarrolla juegos educativos físicos (cartas o de mesa) que pueden usarse no solo en entornos de educación formal y no formal (aulas y eventos escolares), sino también en capacitaciones y entrenamientos empresariales, además de momentos de ocio y mucho aprendizaje entre familia y amigos.",
           "badge": "Offline / Aula de clases",
           "alignment": "Alineado con BNCC"
+        },
+        "livro": {
+          "title": "Libro Meias#Verdades",
+          "desc": "En el libro Meias#Verdades: ¡Aprenda a Desenmascarar Tácticas de Desinformación y Combatir las Fake News!, la investigadora Karoline Fernandes discute los conceptos teóricos de desinformación más actuales y defiende la aplicación del método prebunking en el diseño de juegos serios como estrategia eficaz para prevenir a las personas contra la manipulación en línea.",
+          "badge": "Publicación Académica"
         },
         "codigoPata": {
           "title": "Código P.A.T.A.",
@@ -165,7 +170,7 @@
       "name": "Karoline Fernandes",
       "role": "Fundadora y Directora de Investigación",
       "roleLabel": "Doctora en Alfabetización Mediática",
-      "bio": "Doctora con una sólida trayectoria de investigación científica en Alfabetización Mediática e Informacional, Karoline Fernandes lidera Literacia Edu con una visión clara: transformar investigaciones científicas de vanguardia en soluciones prácticas de alto impacto social. Con experiencia de investigación internacional en la KU Leuven (Bélgica) y proyectos respaldados por la SUDENE, coordina el desarrollo del juego Meias#Verdades y lidera la expansión nacional e internacional de la startup.",
+      "bio": "Periodista, maestra en Comunicación y doctora en Ciencia de la Información, Karoline Fernandes posee una sólida trayectoria como investigadora, con enfoque en Alfabetización Mediática y Juegos Serios. Como fundadora de Literacia Edu, la empresaria tiene una visión clara: transformar investigaciones científicas de vanguardia en soluciones prácticas, de alto impacto social y que sean divertidas! Con experiencia internacional de investigación, ella coordena el desarrollo de proyectos como Meias#Verdades y Código Pata, liderando la expansión nacional e internacional de la startup.",
       "quote": "\"Nuestra misión es dar a los niños y adolescentes los anticuerpos cognitivos necesarios para que naveguen por internet con independencia y seguridad.\""
     },
     "partners": {
@@ -248,8 +253,7 @@
       ]
     },
     "scienceTitle": "La Ciencia de la Alfabetización Mediática",
-    "scienceDesc1": "Nuestra principal base metodológica reside en la Teoría de la Inoculación Psicológica (Inoculation Theory), popularizada en el ámbito de la comunicación digital como Prebunking. En términos simples, al igual que una vacuna médica introduce un virus atenuado para preparar el sistema inmunológico, nuestros juegos presentan a los usuarios, en un entorno controlado y lúdico, las técnicas de manipulación (como el apelo emocional, falsos dilemas y chivos expiatorios).",
-    "scienceDesc2": "Al aprender a crear y reconocer estas técnicas mediante el juego, el joven desarrolla resistencia cognitiva. De esta forma, cuando se encuentra con un intento real de desinformación en sus redes sociales cotidianas, la identifica de inmediato y rechaza compartirla de forma impulsiva.",
+    "scienceDesc1": "Nuestras soluciones se basan en el método Luden, creado por el equipo de investigadoras de Literacia Edu e inspirado en principios científicos de la psicología social, los serious games (juegos serios) y enfoques de Diseño Centrado en el Usuario (DCU). La palabra proviene del latín ludere, que significa jugar, entretenerse o practicar. El acrónimo une los conceptos que guían nuestros valores y principios: Alfabetización, Usabilidad, Diversión y Compromiso.",
     "founderTitle": "Nuestra Fundadora",
     "scienceKicker": "Fundamento Académico",
     "vacinaTitle": "Vacuna Cognitiva",
@@ -272,8 +276,8 @@
         },
         {
           "year": "2024",
-          "title": "Apoyo Gubernamental",
-          "desc": "Aceleración por el programa de la SUDENE y pruebas de campo en escuelas públicas del estado de Pernambuco, con un impacto sumamente positivo."
+          "title": "Apoyo Institucional",
+          "desc": "Literacia Edu cuenta con alianzas estratégicas para la validación científica y comercial de sus productos, como las Universidades Federal y Federal Rural de Pernambuco; el Laboratorio Multiusuario de Humanidades multiHlab de la Fundación Joaquim Nabuco (Fundaj); Sudene, la Secretaría de Medio Ambiente, Sostenibilidad y de Fernando de Noronha (Semas), la Secretaría de Educación del Estado de Pernambuco (SEE) y TV Universitária (TVU)."
         },
         {
           "year": "2025",
@@ -312,25 +316,38 @@
     },
     "memoryGame": {
       "title": "Juego de Memoria Meias#Verdades (Offline)",
-      "subtitle": "Alfabetización mediática presencial, dinámica y cooperativa.",
+      "subtitle": "Intervenciones pedagógicas basadas en juegos.",
       "featuresTitle": "¿Por qué utilizar en el aula?",
       "features": [
-        "Perfecto para escuelas con restricciones sobre el uso de smartphones en el aula.",
-        "Promueve el diálogo presencial mediado por el profesor, desarrollando habilidades interpersonales como la cooperación y el debate.",
-        "Mazo de cartas con ilustraciones exclusivas y casos reales de resolución de problemas adaptados para debates en grupo.",
-        "Guía completa para el profesor alineada con las competencias curriculares modernas."
+        "Perfecto para escuelas con restricciones en el uso de teléfonos inteligentes en el aula.",
+        "Promueve el diálogo presencial mediado por el docente, desarrollando habilidades blandas como cooperación y argumentación.",
+        "Mazo de cartas con ilustraciones exclusivas y situaciones problema reales adaptadas para debate colectivo.",
+        "Guía completa del docente para alineación con la BNCC (competencias 4 y 5)."
       ],
-      "audience": "Recomendado para escuela primaria y secundaria (de 8 a 14 anos).",
+      "audience": "Recomendado para Enseñanza Primaria I y II (8 a 14 años).",
       "mockup": {
         "boardGame": "Juego de Mesa y Cartas",
         "desc": "Interacción presencial para debates profundos.",
         "meias": "MEIAS",
-        "meiasDesc": "Bots Digitales",
+        "meiasDesc": "Robots digitales",
         "verdades": "#VERDADES",
         "verdadesDesc": "Fake News",
         "edu": "EDU",
         "eduDesc": "Ciudadanía"
       }
+    },
+    "livro": {
+      "title": "Libro Meias#Verdades",
+      "subtitle": "Conoce nuestro método.",
+      "desc": "En el libro Meias#Verdades: ¡Aprenda a Desenmascarar Tácticas de Desinformación y Combatir las Fake News!, la investigadora Karoline Fernandes discute los conceptos teóricos de desinformación más actuales y defiende la aplicación del método prebunking en el diseño de juegos serios como estrategia eficaz para prevenir a las personas contra la manipulación en línea.",
+      "featuresTitle": "Destacados de la Publicación",
+      "features": [
+        "Basado en el método prebunking (pre-desenmascaramiento), originado de la Teoría de Inoculación Psicológica.",
+        "Tesis doctoral desarrollada en PPGCI-UFPE con investigación visitante en KU Leuven University, Bélgica.",
+        "Metáfora de la vacuna mental: dosis debilitadas de desinformación para estimular la producción de \"anticuerpos mentales\".",
+        "Disponible en formato físico y e-book a través de Editora Appris (editoraappris.com.br y Amazon)."
+      ],
+      "audience": "Para educadores, investigadores y profesionales de la comunicación interesados en estrategias científicas contra la desinformación."
     },
     "codigoPata": {
       "title": "Código P.A.T.A.",
@@ -354,8 +371,7 @@
     "kitDesc": "Contiene logotipos en alta resolución con fondo transparente, manual de marca completo, paleta de colores y fotos oficiales de la fundadora y de las pruebas educativas.",
     "contactTitle": "Contacto de Prensa",
     "contactText": "¿Necesita un experto científico para hablar sobre desinformación infantil, alfabetización mediática o psicología cognitiva aplicada a la educación? Karoline Fernandes y nuestro equipo están disponibles para entrevistas, ponencias y consultas de temas.",
-    "contactEmail": "karoline@literaciaedu.com",
-    "contactPhone": "+55 81 99656-1408",
+    "contactEmail": "contato@literaciaedu.com.br",
     "releases": [
       {
         "date": "MAY/2026",
@@ -375,7 +391,6 @@
     "title": "Contáctenos",
     "subtitle": "Preguntas, propuestas de alianzas comerciales, propuestas de inversión o adopción de soluciones en escuelas. Estamos listos para responder.",
     "emailLabel": "Correo electrónico",
-    "phoneLabel": "Teléfono / WhatsApp",
     "hoursLabel": "Horario de atención",
     "hours": "Lunes a Viernes, de 9h a 18h",
     "resetButton": "Enviar nuevo mensaje",
@@ -391,23 +406,21 @@
       "institution": "Nombre de la Institución / Escuela / Fondo *",
       "role": "Su cargo o área de trabajo",
       "email": "Correo electrónico de contacto *",
-      "phone": "Teléfono / WhatsApp",
       "message": "Su mensaje (describa sus necesidades o intereses) *",
       "namePlaceholder": "Ej: Maria Gomez",
       "institutionPlaceholder": "Ej: Colegio Alemán / Grow Capital",
       "rolePlaceholder": "Ej: Directora Pedagógica / Inversionista Ángel",
       "emailPlaceholder": "Ej: maria.gomez@escola.com",
-      "phonePlaceholder": "Ej: +55 (81) 99999-9999",
       "messagePlaceholder": "Describa cómo podemos colaborar..."
     },
     "status": {
       "successTitle": "¡Mensaje enviado con éxito!",
       "successText": "Gracias por contactarnos. Nuestro equipo de alianzas y ciencia analizará su mensaje y responderá en menos de 24 horas hábiles.",
       "errorTitle": "Fallo al enviar",
-      "errorText": "Ocurrió un error técnico temporal al intentar enviar su mensaje. Por favor, intente nuevamente o envíe un correo electrónico a karoline@literaciaedu.com."
+      "errorText": "Ocurrió un error técnico temporal al intentar enviar su mensaje. Por favor, intente nuevamente o envíe un correo electrónico a contato@literaciaedu.com.br."
     },
     "infoTitle": "Canales Directos",
     "addressTitle": "Sede Administrativa",
-    "addressText": "Recife, Pernambuco - Brasil. Centro de Tecnología e Innovación de Porto Digital."
+    "addressText": "Rua Dona Maria César, n. 170, cx pst 0203, Bairro do Recife - Recife - PE."
   }
 }

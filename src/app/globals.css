@@ -8,15 +8,17 @@
   
   --color-navy-dark: #05242A;
   --color-navy-deep: #031417;
-  --color-teal-light: #F5F9FA;
-  
+  --color-teal-light: #F4F8F9;
+}
+
+@theme inline {
   --font-sawah: var(--font-sawah), sans-serif;
   --font-spaceboards: var(--font-spaceboards), sans-serif;
-  --font-sans: var(--font-poppins), Arial, Helvetica, sans-serif;
+  --font-sans: var(--font-jakarta), var(--font-poppins), system-ui, sans-serif;
 }
 
 :root {
-  --background: #ffffff;
+  --background: #F4F8F9;
   --foreground: #0B1E21;
 }
 
@@ -57,4 +59,17 @@ html {
   background: rgba(5, 36, 42, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+@font-face {
+  font-family: 'Energize Bold';
+  src: url('/fonts/Energize%20Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-energize { font-family: 'Energize Bold', sans-serif; }
+
+/* Apply Energize Bold to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Energize Bold', sans-serif;
 }

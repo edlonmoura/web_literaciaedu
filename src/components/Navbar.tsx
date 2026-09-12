@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { Menu, X, Globe, ChevronDown } from "lucide-react"
-import { Locale } from "@/lib/get-dictionary"
+import type { Locale } from "@/lib/get-dictionary"
 
 interface NavbarProps {
   locale: Locale
@@ -52,7 +52,7 @@ export default function Navbar({ locale }: NavbarProps) {
     es: {
       home: "Inicio",
       about: "Quiénes Somos",
-      solutions: "Soluções", // Wait, in es it's "Soluciones"
+      solutions: "Soluciones",
       press: "Prensa",
       contact: "Contacto",
       cta: "Contáctanos",
@@ -60,10 +60,6 @@ export default function Navbar({ locale }: NavbarProps) {
   }
 
   const labels = navLabels[locale] || navLabels.pt
-  // Corrections
-  if (locale === "es") {
-    labels.solutions = "Soluciones"
-  }
 
   const navigation = [
     { name: labels.home, href: `/${locale}` },
@@ -95,14 +91,14 @@ export default function Navbar({ locale }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-350 ${
         isScrolled
-          ? "glass border-b border-primary-teal/10 shadow-sm py-4"
-          : "bg-transparent py-6"
+          ? "glass border-b border-primary-teal/10 shadow-sm py-2.5"
+          : "bg-[#05242A]/60 backdrop-blur-md border-b border-white/10 py-3"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2 focus:outline-none">
-          <div className="relative w-44 h-12 md:w-52 md:h-14 transition-transform duration-200 hover:scale-102">
+          <div className="relative w-[300px] h-[80px] md:w-[300px] md:h-[80px] transition-transform duration-200 hover:scale-102">
             {/* Prancheta 15 is our primary colored horizontal logo */}
             <Image
               src="/logo/LOGO__LITERACIA_EDU_Prancheta_15.png"
@@ -110,7 +106,7 @@ export default function Navbar({ locale }: NavbarProps) {
               fill
               className="object-contain"
               priority
-              sizes="(max-width: 768px) 144px, 176px"
+              sizes="300px"
             />
           </div>
         </Link>
@@ -123,8 +119,8 @@ export default function Navbar({ locale }: NavbarProps) {
               href={item.href}
               className={`text-[15px] transition-colors duration-200 hover:text-bright-teal relative py-2 ${
                 isActive(item.href)
-                  ? "text-primary-teal font-semibold"
-                  : "text-[#0B1E21]/80"
+                  ? isScrolled ? "text-primary-teal font-bold" : "text-brand-yellow font-bold"
+                  : isScrolled ? "text-[#0B1E21]/80" : "text-white/90"
               }`}
             >
               {item.name}
@@ -141,11 +137,15 @@ export default function Navbar({ locale }: NavbarProps) {
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-1.5 text-sm font-semibold text-[#0B1E21]/85 hover:text-primary-teal py-2 px-3 rounded-lg hover:bg-teal-light transition-all duration-200 focus:outline-none"
+              className={`flex items-center gap-1.5 text-sm font-semibold py-2 px-3 rounded-lg transition-all duration-200 focus:outline-none ${
+                isScrolled
+                  ? "text-[#0B1E21]/85 hover:text-primary-teal hover:bg-teal-light"
+                  : "text-white/90 hover:text-white hover:bg-white/10"
+              }`}
               aria-label="Select Language"
               aria-expanded={langOpen}
             >
-              <Globe className="w-4 h-4 text-primary-teal" />
+              <Globe className={`w-4 h-4 ${isScrolled ? "text-primary-teal" : "text-bright-teal"}`} />
               <span className="uppercase">{locale}</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
             </button>
@@ -183,7 +183,7 @@ export default function Navbar({ locale }: NavbarProps) {
           {/* CTA Button */}
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex items-center justify-center bg-primary-teal text-white font-semibold text-[14px] px-5 py-2.5 rounded-xl hover:bg-bright-teal transition-all duration-300 shadow-md shadow-primary-teal/10 hover:shadow-lg hover:shadow-bright-teal/10 hover:-translate-y-0.5 focus:ring-2 focus:ring-bright-teal/20"
+            className="inline-flex items-center justify-center bg-brand-yellow text-[#05242A] font-bold text-[14px] px-5 py-2.5 rounded-xl hover:bg-white hover:text-[#05242A] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:ring-2 focus:ring-bright-teal/20"
           >
             {labels.cta}
           </Link>
@@ -194,16 +194,20 @@ export default function Navbar({ locale }: NavbarProps) {
           {/* Quick Lang Select for Mobile */}
           <button
             onClick={() => setLangOpen(!langOpen)}
-            className="flex items-center gap-1 text-sm font-semibold text-[#0B1E21] p-1.5 rounded-lg hover:bg-teal-light focus:outline-none"
+            className={`flex items-center gap-1 text-sm font-semibold p-1.5 rounded-lg focus:outline-none ${
+              isScrolled ? "text-[#0B1E21]" : "text-white"
+            }`}
             aria-label="Select Language"
           >
-            <Globe className="w-4 h-4 text-primary-teal" />
+            <Globe className="w-4 h-4 text-bright-teal" />
             <span className="uppercase">{locale}</span>
           </button>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-1.5 text-primary-teal rounded-lg hover:bg-teal-light focus:outline-none"
+            className={`p-1.5 rounded-lg focus:outline-none ${
+              isScrolled ? "text-primary-teal hover:bg-teal-light" : "text-white hover:bg-white/10"
+            }`}
             aria-label="Toggle Menu"
             aria-expanded={isOpen}
           >

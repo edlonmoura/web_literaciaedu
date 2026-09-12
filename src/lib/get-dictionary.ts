@@ -8,6 +8,12 @@ const dictionaries = {
 
 export type Locale = 'pt' | 'en' | 'es'
 
+const locales: Locale[] = ['pt', 'en', 'es']
+
+export function validLocale(locale: string): Locale {
+  return locales.includes(locale as Locale) ? (locale as Locale) : 'pt'
+}
+
 export const getDictionary = async (locale: Locale) => {
   if (dictionaries[locale]) {
     return dictionaries[locale]()

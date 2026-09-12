@@ -37,7 +37,7 @@
   "home": {
     "hero": {
       "title": "Education, Science, and Digital Literacy for Tomorrow",
-      "subtitle": "We develop educational solutions based on scientific evidence to strengthen critical thinking, digital citizenship, and resilience in children and adolescents facing the challenges of the information age.",
+      "subtitle": "We develop games and other educational technologies focused on developing socio-emotional skills and media literacy to strengthen critical thinking, digital citizenship, and resilience in children and adolescents facing the challenges of the information age.",
       "badge": "Evidence-based EdTech",
       "mockup": {
         "letramento": "Media Literacy",
@@ -106,9 +106,14 @@
         },
         "meiasVerdadesMemory": {
           "title": "Meias#Verdades Memory Game",
-          "desc": "A dynamic physical (offline) card game designed for classrooms and group activities. It encourages face-to-face discussions, stimulates cooperation, and introduces essential digital literacy concepts.",
+          "desc": "Our team develops physical educational games (cards or board games) that can be used not only in formal and non-formal education settings (classrooms and school events), but also in corporate training and workshops, as well as moments of leisure and lots of learning among family and friends.",
           "badge": "Offline / Classroom",
           "alignment": "BNCC Aligned"
+        },
+        "livro": {
+          "title": "Meias#Verdades Book",
+          "desc": "In the book Meias#Verdades: Learn to Unmask Disinformation Tactics and Combat Fake News!, researcher Karoline Fernandes discusses the most current theoretical concepts of disinformation and defends the application of the prebunking method in serious game design as an effective strategy to prevent people against online manipulation.",
+          "badge": "Academic Publication"
         },
         "codigoPata": {
           "title": "Código P.A.T.A.",
@@ -165,7 +170,7 @@
       "name": "Karoline Fernandes",
       "role": "Founder and Research Director",
       "roleLabel": "PhD in Media Literacy",
-      "bio": "Holding a PhD and a solid track record of scientific research in Media and Information Literacy, Karoline Fernandes leads Literacia Edu with a clear vision: turning cutting-edge academic research into high-impact social solutions. With international research experience at KU Leuven (Belgium) and projects supported by SUDENE, she oversees the development of the Meias#Verdades game and drives the national and international expansion of the startup.",
+      "bio": "Journalist, master's in Communication and doctorate in Information Science, Karoline Fernandes has a solid trajectory as a researcher, focusing on Media Literacy and Serious Games. As founder of Literacia Edu, the entrepreneur has a clear vision: to transform cutting-edge scientific research into practical, high social impact and fun solutions! With international research experience, she coordinates the development of projects like Meias#Verdades and Código Pata, leading the startup's national and international expansion.",
       "quote": "\"Our mission is to equip children and teens with the cognitive antibodies required to navigate the internet with independence and safety.\""
     },
     "partners": {
@@ -248,8 +253,7 @@
       ]
     },
     "scienceTitle": "The Science of Media Literacy",
-    "scienceDesc1": "Our main methodological foundation lies in Psychological Inoculation Theory, popularly referred to in digital communication as Prebunking. Simply put, just as a medical vaccine introduces a weakened virus to train the immune system, our games present users, in a controlled and playful environment, with manipulation techniques (such as emotional appeals, false dilemmas, and scapegoating).",
-    "scienceDesc2": "By learning how to create and recognize these techniques through gameplay, young people develop cognitive resistance. Thus, when they encounter real disinformation on their daily social media feeds, they instantly spot it and reject impulsive sharing.",
+    "scienceDesc1": "Our solutions are based on the Luden method, created by Literacia Edu's research team and inspired by scientific principles from social psychology, serious games, and User-Centered Design (UCD) approaches. The word comes from the Latin ludere, meaning to play, to game, or to practice. The acronym unites the concepts that guide our values and principles: Literacy, Usability, Fun, and Engagement.",
     "founderTitle": "Our Founder",
     "scienceKicker": "Academic Foundation",
     "vacinaTitle": "Cognitive Vaccine",
@@ -272,8 +276,8 @@
         },
         {
           "year": "2024",
-          "title": "Government Support",
-          "desc": "Acceleration by the SUDENE program and field tests in public schools in Pernambuco, yielding highly positive results."
+          "title": "Institutional Support",
+          "desc": "Literacia Edu has strategic partnerships for the scientific and market validation of its products, including the Federal University and Federal Rural University of Pernambuco; the multiHlab Humanities Multi-User Laboratory at Fundação Joaquim Nabuco (Fundaj); Sudene, the Secretariat of Environment, Sustainability and of Fernando de Noronha (Semas), the Secretariat of Education of Pernambuco State (SEE) and TV Universitária (TVU)."
         },
         {
           "year": "2025",
@@ -312,25 +316,38 @@
     },
     "memoryGame": {
       "title": "Meias#Verdades Memory Game (Offline)",
-      "subtitle": "In-person, dynamic, and cooperative media literacy.",
+      "subtitle": "Game-based pedagogical interventions.",
       "featuresTitle": "Why use it in the classroom?",
       "features": [
-        "Perfect for schools with smartphone usage restrictions in classrooms.",
-        "Promotes teacher-mediated face-to-face dialogue, developing soft skills like cooperation and debate.",
-        "Card deck with exclusive illustrations and real problem-solving cases adapted for group discussions.",
-        "Complete teacher's guide aligned with modern curriculum competencies."
+        "Perfect for schools with restrictions on smartphone use in the classroom.",
+        "Promotes face-to-face dialogue mediated by the teacher, developing soft skills such as cooperation and argumentation.",
+        "Card deck with exclusive illustrations and real problem situations adapted for collective debate.",
+        "Complete teacher guide for alignment with BNCC (competencies 4 and 5)."
       ],
-      "audience": "Recommended for elementary and middle schools (ages 8 to 14).",
+      "audience": "Recommended for Elementary School I and II (8 to 14 years old).",
       "mockup": {
         "boardGame": "Board and Card Game",
         "desc": "In-person interaction for deep debates.",
         "meias": "MEIAS",
-        "meiasDesc": "Digital Bots",
+        "meiasDesc": "Digital robots",
         "verdades": "#VERDADES",
         "verdadesDesc": "Fake News",
         "edu": "EDU",
         "eduDesc": "Citizenship"
       }
+    },
+    "livro": {
+      "title": "Meias#Verdades Book",
+      "subtitle": "Meet our methodology.",
+      "desc": "In the book Meias#Verdades: Learn to Unmask Disinformation Tactics and Combat Fake News!, researcher Karoline Fernandes discusses the most current theoretical concepts of disinformation and defends the application of the prebunking method in serious game design as an effective strategy to prevent people against online manipulation.",
+      "featuresTitle": "Publication Highlights",
+      "features": [
+        "Based on the prebunking method (pre-demasking), originated from Psychological Inoculation Theory.",
+        "Doctoral thesis developed at PPGCI-UFPE with visiting research at KU Leuven University, Belgium.",
+        "Mental vaccine metaphor: weakened doses of disinformation to stimulate the production of \"mental antibodies\".",
+        "Available in physical format and e-book through Editora Appris (editoraappris.com.br and Amazon)."
+      ],
+      "audience": "For educators, researchers, and communication professionals interested in scientific strategies against disinformation."
     },
     "codigoPata": {
       "title": "Código P.A.T.A.",
@@ -354,8 +371,7 @@
     "kitDesc": "Includes high-resolution transparent logos, brand identity manual, color palette, and official photos of the founder and pilot educational tests.",
     "contactTitle": "Press Contacts",
     "contactText": "Need a scientific expert to talk about child disinformation, media literacy, or cognitive psychology applied to education? Karoline Fernandes and our team are available for interviews, talks, and editorial consults.",
-    "contactEmail": "karoline@literaciaedu.com",
-    "contactPhone": "+55 81 99656-1408",
+    "contactEmail": "contato@literaciaedu.com.br",
     "releases": [
       {
         "date": "MAY/2026",
@@ -375,7 +391,6 @@
     "title": "Contact Us",
     "subtitle": "Questions, business partnership inquiries, investment proposals, or school solutions adoptions. We are ready to answer.",
     "emailLabel": "E-mail",
-    "phoneLabel": "Phone / WhatsApp",
     "hoursLabel": "Office Hours",
     "hours": "Monday to Friday, 9am to 6pm",
     "resetButton": "Send new message",
@@ -391,23 +406,21 @@
       "institution": "Name of Institution / School / Fund *",
       "role": "Your role or field",
       "email": "Contact email *",
-      "phone": "Phone / WhatsApp",
       "message": "Your message (describe your needs or interests) *",
       "namePlaceholder": "E.g., Maria Smith",
       "institutionPlaceholder": "E.g., Anglo School / Grow Capital",
       "rolePlaceholder": "E.g., Head of Education / Angel Investor",
       "emailPlaceholder": "E.g., maria.smith@school.com",
-      "phonePlaceholder": "E.g., +55 (81) 99999-9999",
       "messagePlaceholder": "Describe how we can collaborate..."
     },
     "status": {
       "successTitle": "Message sent successfully!",
       "successText": "Thank you for reaching out. Our partnership and science team will review your inquiry and reply within 24 business hours.",
       "errorTitle": "Failed to send",
-      "errorText": "A temporary technical issue occurred while sending your message. Please try again or email us directly at karoline@literaciaedu.com."
+      "errorText": "A temporary technical issue occurred while sending your message. Please try again or email us directly at contato@literaciaedu.com.br."
     },
     "infoTitle": "Direct Channels",
     "addressTitle": "Headquarters",
-    "addressText": "Recife, Pernambuco - Brazil. Tech and Innovation Hub at Porto Digital."
+    "addressText": "Rua Dona Maria César, n. 170, cx pst 0203, Bairro do Recife - Recife - PE."
   }
 }
