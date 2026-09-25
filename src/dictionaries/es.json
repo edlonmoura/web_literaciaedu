@@ -168,8 +168,8 @@
       "title": "Liderazgo y Base Científica",
       "subtitle": "Nacida en la academia, diseñada para el mundo.",
       "name": "Karoline Fernandes",
-      "role": "Fundadora y Directora de Investigación",
-      "roleLabel": "Doctora en Alfabetización Mediática",
+      "role": "Periodista, investigadora y\nCEO de Literacia",
+      "roleLabel": "Periodista, investigadora y\nCEO de Literacia",
       "bio": "Periodista, maestra en Comunicación y doctora en Ciencia de la Información, Karoline Fernandes posee una sólida trayectoria como investigadora, con enfoque en Alfabetización Mediática y Juegos Serios. Como fundadora de Literacia Edu, la empresaria tiene una visión clara: transformar investigaciones científicas de vanguardia en soluciones prácticas, de alto impacto social y que sean divertidas! Con experiencia internacional de investigación, ella coordena el desarrollo de proyectos como Meias#Verdades y Código Pata, liderando la expansión nacional e internacional de la startup.",
       "quote": "\"Nuestra misión es dar a los niños y adolescentes los anticuerpos cognitivos necesarios para que naveguen por internet con independencia y seguridad.\""
     },
@@ -351,8 +351,8 @@
     },
     "codigoPata": {
       "title": "Código P.A.T.A.",
-      "subtitle": "La futura frontera de la alfabetización digital.",
-      "desc": "Código P.A.T.A. es un ecosistema gamificado multiplataforma en fase avanzada de desarrollo. El proyecto expande la alfabetización mediática clásica para incorporar nociones básicas de algoritmos de inteligencia artificial, curaduría de feeds automatizados y ciudadanía digital ética. La solución integrará herramientas de autoría digital, lo que permitirá a los propios alumnos diseñar sus campañas de alfabetización mediática dentro de su escuela.",
+      "subtitle": "Alfabetización sobre el Bienestar Animal",
+      "desc": "El proyecto Código PATA es un conjunto de intervenciones educativas gamificadas que tiene como propósito enseñar a niñas, niños y adolescentes sobre el bienestar animal. A partir de nuestras metodologías, estamos desarrollando un juego móvil que podrá descargarse gratuitamente en las tiendas de aplicaciones a partir del primer semestre de 2027, además de un juego de cartas para garantizar la diversión entre amigos y familia. El proyecto también incluyó una serie de microvideos con misiones gamificadas para que los peques aprendan a cuidar de sus mascotas!!",
       "status": "Producto en desarrollo. Lanzamiento previsto para el próximo semestre.",
       "mockup": {
         "algorithms": "Algoritmos de Recomendación",

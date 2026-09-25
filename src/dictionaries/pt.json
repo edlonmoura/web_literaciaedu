@@ -168,8 +168,8 @@
       "title": "Liderança e Base Científica",
       "subtitle": "Nascida na academia, projetada para o mundo.",
       "name": "Karoline Fernandes",
-      "role": "Fundadora e Diretora de Pesquisa",
-      "roleLabel": "Doutora em Letramento Midiático",
+      "role": "Jornalista, pesquisadora e\nCEO da Literacia",
+      "roleLabel": "Jornalista, pesquisadora e\nCEO da Literacia",
       "bio": "Jornalista, mestra em Comunicação e doutora em Ciência da Informação, Karoline Fernandes possui sólida trajetória como pesquisadora, com foco em Letramento Midiático e Jogos Sérios. Como fundadora da Literacia Edu, a empresária tem uma visão clara: transformar pesquisas científicas de ponta em soluções práticas, de alto impacto social e que sejam divertidas! Com experiência internacional de pesquisa, ela coordena o desenvolvimento de projetos como o Meias#Verdades e o Código Pata, liderando a expansão nacional e internacional da startup.",
       "quote": "\"Nossa missão é dar às crianças e adolescentes os anticorpos cognitivos necessários para que naveguem na internet com independência e segurança.\""
     },
@@ -351,8 +351,8 @@
     },
     "codigoPata": {
       "title": "Código P.A.T.A.",
-      "subtitle": "A fronteira futura do letramento midiático.",
-      "desc": "O Código P.A.T.A. é um ecossistema gamificado multiplataforma em estágio avançado de desenvolvimento. O projeto expande o letramento midiático clássico para incorporar noções de algoritmos de inteligência artificial, curadoria de feeds automatizados e cidadania digital ética. A solução integrará ferramentas de autoria digital para que os próprios alunos criem suas campanhas de letramento na escola.",
+      "subtitle": "Letramento sobre o Bem-Estar Animal",
+      "desc": "O projeto Código PATA é um conjunto de intervenções educacionais gamificadas que tem como propósito ensinar crianças e adolescentes sobre o bem-estar animal. A partir das nossas metodologias, estamos desenvolvendo um jogo mobile, que poderá ser baixado gratuitamente nas lojas de aplicativos a partir do 1ª semestre de 2027, além de um jogo de cartas para garantir a diversão entre amigos e família. O projeto também incluiu uma série de microvídeos com missões gamificadas para a garotada aprender a cuidar dos pets!!",
       "status": "Produto em desenvolvimento. Lançamento previsto para o próximo semestre.",
       "mockup": {
         "algorithms": "Algoritmos de Recomendação",

@@ -180,7 +180,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <FadeIn direction="right" delay={0.15}>
               <div className="flex flex-col gap-1">
                 <span className="text-xl font-bold text-brand-yellow font-sans">{dict.home.founder.name}</span>
-                <span className="text-xs font-semibold uppercase tracking-wider text-bright-teal font-sans">{dict.home.founder.role}</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-bright-teal font-sans whitespace-pre-line">{dict.home.founder.role}</span>
               </div>
             </FadeIn>
             <FadeIn direction="right" delay={0.2}>
@@ -208,7 +208,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#031417]/90 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 z-10 p-6 flex flex-col items-center gap-2">
                     <span className="font-spaceboards text-lg uppercase tracking-wider text-brand-yellow">{dict.home.founder.name}</span>
-                    <span className="text-[10px] text-white/70 tracking-widest font-sans uppercase">{dict.home.founder.roleLabel}</span>
+                    <span className="text-[10px] text-white/70 tracking-widest font-sans uppercase whitespace-pre-line">{dict.home.founder.roleLabel}</span>
                   </div>
                 </div>
               </div>

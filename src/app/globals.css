@@ -60,16 +60,9 @@ html {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
-@font-face {
-  font-family: 'Energize Bold';
-  src: url('/fonts/Energize%20Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+.font-energize { font-family: var(--font-jakarta), sans-serif; }
 
-.font-energize { font-family: 'Energize Bold', sans-serif; }
-
-/* Apply Energize Bold to all headings */
+/* Apply Plus Jakarta Sans to all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Energize Bold', sans-serif;
+  font-family: var(--font-jakarta), sans-serif;
 }

@@ -168,8 +168,8 @@
       "title": "Leadership & Scientific Foundation",
       "subtitle": "Born in academia, designed for the world.",
       "name": "Karoline Fernandes",
-      "role": "Founder and Research Director",
-      "roleLabel": "PhD in Media Literacy",
+      "role": "Journalist, researcher and\nCEO of Literacia",
+      "roleLabel": "Journalist, researcher and\nCEO of Literacia",
       "bio": "Journalist, master's in Communication and doctorate in Information Science, Karoline Fernandes has a solid trajectory as a researcher, focusing on Media Literacy and Serious Games. As founder of Literacia Edu, the entrepreneur has a clear vision: to transform cutting-edge scientific research into practical, high social impact and fun solutions! With international research experience, she coordinates the development of projects like Meias#Verdades and Código Pata, leading the startup's national and international expansion.",
       "quote": "\"Our mission is to equip children and teens with the cognitive antibodies required to navigate the internet with independence and safety.\""
     },
@@ -351,8 +351,8 @@
     },
     "codigoPata": {
       "title": "Código P.A.T.A.",
-      "subtitle": "The future frontier of digital literacy.",
-      "desc": "Código P.A.T.A. is a cross-platform gamified ecosystem in late-stage development. The project expands classic media literacy to incorporate basic concepts of artificial intelligence algorithms, automated feed curation, and ethical digital citizenship. The solution will integrate digital authorship tools, allowing students to design their own digital literacy campaigns within their school.",
+      "subtitle": "Animal Welfare Literacy",
+      "desc": "The Código PATA project is a set of gamified educational interventions designed to teach children and adolescents about animal welfare. Using our methodologies, we are developing a mobile game that can be downloaded for free from app stores starting in the first half of 2027, as well as a card game to guarantee fun among friends and family. The project also included a series of microvideos with gamified missions so kids can learn how to take care of their pets!!",
       "status": "Product under development. Release scheduled for next semester.",
       "mockup": {
         "algorithms": "Recommendation Algorithms",
