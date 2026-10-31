@@ -1,0 +1,11 @@
+.env
+.env*.local
+.env.production
+.vercel
+.next
+node_modules
+dev.log
+tsconfig.tsbuildinfo
+AGENTS.md
+CLAUDE.md
+id_logo

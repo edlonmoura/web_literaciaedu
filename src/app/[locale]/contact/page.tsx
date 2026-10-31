@@ -49,13 +49,13 @@ export default async function ContactPage({ params }: ContactPageProps) {
     <div className="relative w-full overflow-hidden bg-[#F4F8F9]">
       
       {/* HEADER */}
-      <section className="relative pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
+      <section className="relative pt-16 md:pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-bright-teal/30 rounded-full blur-3xl" />
         </div>
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-6 relative z-10">
           <FadeIn direction="up">
-            <span className="font-energize text-brand-yellow text-5xl sm:text-6xl lg:text-7xl">
+            <span className="font-energize text-brand-yellow text-4xl sm:text-5xl lg:text-7xl">
               {dict.common.nav.contact}
             </span>
           </FadeIn>
@@ -69,10 +69,10 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
       {/* FORM AND INFO SECTION */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
           {/* Form wrapper */}
-          <div className="lg:col-span-7 bg-white/95 backdrop-blur-md border border-primary-teal/10 rounded-3xl p-8 md:p-10 shadow-xl relative z-10">
+          <div className="lg:col-span-7 bg-white/95 backdrop-blur-md border border-primary-teal/10 rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl relative z-10">
             <FadeIn direction="right">
               <ContactForm
                 labels={formLabels}
@@ -88,7 +88,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
           {/* Contact details sidebar */}
           <div className="lg:col-span-5 flex flex-col gap-8">
             {/* Direct Channels */}
-            <FadeIn direction="left" className="bg-gradient-to-br from-[#05242A] to-[#076476] border border-white/10 text-white rounded-3xl p-8 flex flex-col gap-6 shadow-2xl hover:shadow-bright-teal/10 transition-all duration-400">
+            <FadeIn direction="left" className="bg-gradient-to-br from-[#05242A] to-[#076476] border border-white/10 text-white rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-2xl hover:shadow-bright-teal/10 transition-all duration-400">
               <div className="flex items-center gap-3">
                 <span className="text-bright-teal"><MessageCircle className="w-6 h-6" /></span>
                 <h3 className="font-sans font-bold text-lg text-white">
@@ -120,7 +120,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
             </FadeIn>
 
             {/* Sede Administrativa */}
-            <FadeIn direction="left" delay={0.1} className="bg-white/90 backdrop-blur-sm border border-primary-teal/10 border-l-4 border-l-brand-yellow rounded-3xl p-8 flex flex-col gap-4 shadow-md hover:shadow-xl transition-all duration-400">
+            <FadeIn direction="left" delay={0.1} className="bg-white/90 backdrop-blur-sm border border-primary-teal/10 border-l-4 border-l-brand-yellow rounded-3xl p-6 sm:p-8 flex flex-col gap-4 shadow-md hover:shadow-xl transition-all duration-400">
               <div className="flex items-center gap-3">
                 <span className="text-brand-yellow group-hover:scale-110 transition-transform duration-400"><MapPin className="w-6 h-6" /></span>
                 <h3 className="font-sans font-bold text-lg text-primary-teal">

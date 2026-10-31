@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { Menu, X, Globe, ChevronDown } from "lucide-react"
+import { motion } from "framer-motion"
 import type { Locale } from "@/lib/get-dictionary"
 
 interface NavbarProps {
@@ -30,6 +31,26 @@ export default function Navbar({ locale }: NavbarProps) {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Lock body scroll while the mobile drawer is open
+  useEffect(() => {
+    if (!isOpen) return
+    const previous = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = previous
+    }
+  }, [isOpen])
+
+  // Close menus when the route changes (including back/forward navigation).
+  // Adjusting state during render is the React-recommended pattern here —
+  // an effect would cause a cascading render.
+  const [lastPathname, setLastPathname] = useState(pathname)
+  if (lastPathname !== pathname) {
+    setLastPathname(pathname)
+    if (isOpen) setIsOpen(false)
+    if (langOpen) setLangOpen(false)
+  }
 
   // Translations for Navbar labels (fallback static translations just in case, or we pass them down)
   const navLabels = {
@@ -88,17 +109,16 @@ export default function Navbar({ locale }: NavbarProps) {
   }
 
   return (
+    <>
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-350 ${
-        isScrolled
-          ? "glass border-b border-primary-teal/10 shadow-sm py-2.5"
-          : "bg-[#05242A]/60 backdrop-blur-md border-b border-white/10 py-3"
+      className={`fixed top-0 left-0 right-0 z-50 glass border-b border-primary-teal/10 transition-all duration-350 ${
+        isScrolled ? "shadow-sm py-1.5 md:py-2.5" : "py-2 md:py-3"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2 focus:outline-none">
-          <div className="relative w-[300px] h-[80px] md:w-[300px] md:h-[80px] transition-transform duration-200 hover:scale-102">
+        <Link href={`/${locale}`} className="flex items-center gap-2 focus:outline-none shrink-0">
+          <div className="relative w-[152px] h-[41px] sm:w-[200px] sm:h-[54px] md:w-[300px] md:h-[80px] transition-transform duration-200 hover:scale-102">
             {/* Prancheta 15 is our primary colored horizontal logo */}
             <Image
               src="/logo/LOGO__LITERACIA_EDU_Prancheta_15.png"
@@ -106,7 +126,7 @@ export default function Navbar({ locale }: NavbarProps) {
               fill
               className="object-contain"
               priority
-              sizes="300px"
+              sizes="(max-width: 640px) 152px, (max-width: 768px) 200px, 300px"
             />
           </div>
         </Link>
@@ -119,8 +139,8 @@ export default function Navbar({ locale }: NavbarProps) {
               href={item.href}
               className={`text-[15px] transition-colors duration-200 hover:text-bright-teal relative py-2 ${
                 isActive(item.href)
-                  ? isScrolled ? "text-primary-teal font-bold" : "text-brand-yellow font-bold"
-                  : isScrolled ? "text-[#0B1E21]/80" : "text-white/90"
+                  ? "text-primary-teal font-bold"
+                  : "text-[#0B1E21]/80"
               }`}
             >
               {item.name}
@@ -137,15 +157,11 @@ export default function Navbar({ locale }: NavbarProps) {
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className={`flex items-center gap-1.5 text-sm font-semibold py-2 px-3 rounded-lg transition-all duration-200 focus:outline-none ${
-                isScrolled
-                  ? "text-[#0B1E21]/85 hover:text-primary-teal hover:bg-teal-light"
-                  : "text-white/90 hover:text-white hover:bg-white/10"
-              }`}
+              className={`flex items-center gap-1.5 text-sm font-semibold py-2 px-3 rounded-lg transition-all duration-200 focus:outline-none text-[#0B1E21]/85 hover:text-primary-teal hover:bg-teal-light`}
               aria-label="Select Language"
               aria-expanded={langOpen}
             >
-              <Globe className={`w-4 h-4 ${isScrolled ? "text-primary-teal" : "text-bright-teal"}`} />
+              <Globe className="w-4 h-4 text-primary-teal" />
               <span className="uppercase">{locale}</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
             </button>
@@ -190,24 +206,21 @@ export default function Navbar({ locale }: NavbarProps) {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-1 sm:gap-2 shrink-0">
           {/* Quick Lang Select for Mobile */}
           <button
             onClick={() => setLangOpen(!langOpen)}
-            className={`flex items-center gap-1 text-sm font-semibold p-1.5 rounded-lg focus:outline-none ${
-              isScrolled ? "text-[#0B1E21]" : "text-white"
-            }`}
+            className="flex items-center gap-1 text-sm font-semibold p-2.5 rounded-lg focus:outline-none text-[#0B1E21]"
             aria-label="Select Language"
+            aria-expanded={langOpen}
           >
-            <Globe className="w-4 h-4 text-bright-teal" />
+            <Globe className="w-5 h-5 text-bright-teal" />
             <span className="uppercase">{locale}</span>
           </button>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`p-1.5 rounded-lg focus:outline-none ${
-              isScrolled ? "text-primary-teal hover:bg-teal-light" : "text-white hover:bg-white/10"
-            }`}
+            className="p-2.5 rounded-lg focus:outline-none text-primary-teal hover:bg-teal-light"
             aria-label="Toggle Menu"
             aria-expanded={isOpen}
           >
@@ -216,44 +229,51 @@ export default function Navbar({ locale }: NavbarProps) {
         </div>
       </div>
 
-      {/* Mobile Lang Dropdown Drawer overlay */}
+      {/* Mobile Lang Dropdown */}
       {langOpen && (
-        <div className="md:hidden absolute right-16 top-16 bg-white rounded-lg shadow-md border border-primary-teal/10 p-2 z-50 flex flex-col gap-1">
-          <button onClick={() => switchLocale("pt")} className="px-3 py-1.5 text-left text-sm font-semibold hover:bg-teal-light rounded">PT</button>
-          <button onClick={() => switchLocale("en")} className="px-3 py-1.5 text-left text-sm font-semibold hover:bg-teal-light rounded">EN</button>
-          <button onClick={() => switchLocale("es")} className="px-3 py-1.5 text-left text-sm font-semibold hover:bg-teal-light rounded">ES</button>
-        </div>
-      )}
-
-      {/* Mobile Drawer Navigation */}
-      {isOpen && (
-        <div className="md:hidden fixed inset-0 top-[72px] bg-white z-40 transition-all duration-300 flex flex-col justify-between p-6 border-t border-primary-teal/10 animate-fade-in">
-          <nav className="flex flex-col gap-6 font-semibold text-lg">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className={`py-2 border-b border-primary-teal/5 transition-colors ${
-                  isActive(item.href) ? "text-primary-teal" : "text-[#0B1E21]"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="flex flex-col gap-4 mt-8 pb-12">
-            <Link
-              href={`/${locale}/contact`}
-              onClick={() => setIsOpen(false)}
-              className="w-full text-center bg-primary-teal text-white font-semibold py-3.5 rounded-xl hover:bg-bright-teal transition-colors shadow-lg"
-            >
-              {labels.cta}
-            </Link>
-          </div>
+        <div className="md:hidden absolute right-4 top-full mt-2 min-w-[72px] bg-white rounded-lg shadow-md border border-primary-teal/10 p-2 z-50 flex flex-col gap-1">
+          <button onClick={() => switchLocale("pt")} className={`px-3 py-3 text-left text-sm font-semibold hover:bg-teal-light rounded ${locale === "pt" ? "text-primary-teal" : ""}`}>PT</button>
+          <button onClick={() => switchLocale("en")} className={`px-3 py-3 text-left text-sm font-semibold hover:bg-teal-light rounded ${locale === "en" ? "text-primary-teal" : ""}`}>EN</button>
+          <button onClick={() => switchLocale("es")} className={`px-3 py-3 text-left text-sm font-semibold hover:bg-teal-light rounded ${locale === "es" ? "text-primary-teal" : ""}`}>ES</button>
         </div>
       )}
     </header>
+
+    {/* Mobile Drawer Navigation — rendered outside <header> so the
+        header's backdrop-filter cannot clip this fixed element */}
+    {isOpen && (
+      <motion.div
+        initial={{ opacity: 0, y: -8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+        className="md:hidden fixed inset-0 z-40 bg-white pt-[76px] pb-10 px-6 overflow-y-auto border-t border-primary-teal/10"
+      >
+        <nav className="flex flex-col gap-2 font-semibold text-lg">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className={`py-3.5 border-b border-primary-teal/5 transition-colors ${
+                isActive(item.href) ? "text-primary-teal" : "text-[#0B1E21]"
+              }`}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex flex-col gap-4 mt-8">
+          <Link
+            href={`/${locale}/contact`}
+            onClick={() => setIsOpen(false)}
+            className="w-full text-center bg-primary-teal text-white font-semibold py-4 rounded-xl hover:bg-bright-teal transition-colors shadow-lg"
+          >
+            {labels.cta}
+          </Link>
+        </div>
+      </motion.div>
+    )}
+    </>
   )
 }

@@ -20,7 +20,7 @@ export default async function TermsPage({ params }: LegalPageProps) {
   return (
     <div className="relative w-full overflow-hidden bg-[#F4F8F9]">
       {/* HEADER */}
-      <section className="relative pt-32 pb-16 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
+      <section className="relative pt-16 md:pt-32 pb-16 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-4">
           <FadeIn direction="up">
             <h1 className="text-3xl sm:text-4xl font-sans font-bold text-white">{title}</h1>
@@ -30,7 +30,7 @@ export default async function TermsPage({ params }: LegalPageProps) {
 
       {/* CONTENT DOCUMENT CARD */}
       <section className="py-20 px-6 lg:px-8 max-w-4xl mx-auto">
-        <FadeIn direction="up" delay={0.1} className="bg-white/95 backdrop-blur-md border border-primary-teal/10 rounded-3xl p-8 md:p-12 shadow-xl prose prose-teal max-w-none text-sm leading-relaxed text-[#0B1E21]/80 font-sans flex flex-col gap-6 font-light">
+        <FadeIn direction="up" delay={0.1} className="bg-white/95 backdrop-blur-md border border-primary-teal/10 rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl prose prose-teal max-w-none text-sm leading-relaxed text-[#0B1E21]/80 font-sans flex flex-col gap-6 font-light">
           {isPt ? (
             <>
               <p>

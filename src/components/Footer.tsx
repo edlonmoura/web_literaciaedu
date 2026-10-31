@@ -69,7 +69,7 @@ export default function Footer({ locale }: FooterProps) {
   return (
     <footer className="bg-[#031417] text-white border-t border-white/10 pt-16 pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-12 lg:gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <Link href={`/${locale}`} className="relative w-44 h-12 block">

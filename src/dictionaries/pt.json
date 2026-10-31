@@ -62,11 +62,6 @@
           "value": "15+",
           "label": "Prêmios e Editais",
           "desc": "Apoio governamental e internacional"
-        },
-        {
-          "value": "3",
-          "label": "Idiomas",
-          "desc": "Preparado para escala global"
         }
       ]
     },
@@ -102,7 +97,7 @@
           "title": "Meias#Verdades",
           "desc": "Um jogo mobile educativo revolucionário baseado na Teoria da Inoculação (prebunking). Os jovens aprendem as técnicas da desinformação jogando como criadores de conteúdo, construindo 'anticorpos mentais' contra a manipulação online.",
           "badge": "Jogo Mobile",
-          "support": "Apoio: KU Leuven"
+          "support": "Apoio: SUDENE"
         },
         "meiasVerdadesMemory": {
           "title": "Jogo da Memória Meias#Verdades",
@@ -117,7 +112,7 @@
         },
         "codigoPata": {
           "title": "Código P.A.T.A.",
-          "desc": "Nossa próxima plataforma digital em desenvolvimento. Um ecossistema gamificado completo para escolas que expande as habilidades de letramento computacional e media literacy para o ensino fundamental II.",
+          "desc": "Jogos educacionais, microaulas e abordagens lúdicas fazem parte do conjunto de ações do projeto Código P.A.T.A (Proteger, Aprender, Tratar, Amar), que tem como objetivo sensibilizar crianças e adolescentes sobre a causa animal. A iniciativa é executada pela startup pernambucana Literacia Edu em parceria com o Laboratório de Consumo e Respostas Inventivas (Lacrei) da Universidade Federal Rural de Pernambuco (UFRPE) e a Secretaria de Meio Ambiente, Sustentabilidade e de Fernando de Noronha de Pernambuco (Semas-PE).",
           "badge": "Em desenvolvimento",
           "launch": "Lançamento no próximo semestre."
         }
@@ -173,13 +168,20 @@
       "bio": "Jornalista, mestra em Comunicação e doutora em Ciência da Informação, Karoline Fernandes possui sólida trajetória como pesquisadora, com foco em Letramento Midiático e Jogos Sérios. Como fundadora da Literacia Edu, a empresária tem uma visão clara: transformar pesquisas científicas de ponta em soluções práticas, de alto impacto social e que sejam divertidas! Com experiência internacional de pesquisa, ela coordena o desenvolvimento de projetos como o Meias#Verdades e o Código Pata, liderando a expansão nacional e internacional da startup.",
       "quote": "\"Nossa missão é dar às crianças e adolescentes os anticorpos cognitivos necessários para que naveguem na internet com independência e segurança.\""
     },
+    "cto": {
+      "name": "Felipe Reed",
+      "role": "CTO DA LITERACIA",
+      "roleLabel": "designer e desenvolvedor de software",
+      "bio": "Felipe Reed é designer e desenvolvedor de software, unindo criatividade, tecnologia e pensamento estratégico para criar experiências digitais funcionais, intuitivas e visualmente impactantes."
+    },
     "partners": {
       "title": "Parceiros Institucionais e Apoio",
       "types": {
         "academic": "Acadêmico",
         "research": "Pesquisa Internacional",
         "acceleration": "Fomento / Aceleração",
-        "government": "Governo / Projetos"
+        "government": "Governo / Projetos",
+        "municipal": "Governo Municipal"
       }
     },
     "press": {
@@ -190,25 +192,44 @@
       "readMore": "Ler reportagem",
       "articles": [
         {
+          "type": "artigo",
+          "category": "CULTURA",
+          "date": "JUN/2026",
+          "title": "Jornalista e pesquisadora lança livro sobre como se proteger das fake news",
+          "desc": "A obra Meias#Verdades, de Karoline Fernandes, apresenta conceitos científicos sobre desinformação e propõe o uso do prebunking e de jogos educativos para preparar as pessoas a reconhecer táticas de manipulação antes de serem enganadas.",
+          "source": "JC",
+          "cta": "Ler reportagem",
+          "url": "https://jc.uol.com.br/cultura/2026/06/09/jornalista-e-pesquisadora-lanca-livro-sobre-como-se-proteger-das-fake-news.html"
+        },
+        {
+          "type": "artigo",
           "category": "ARTIGO ACADÊMICO",
           "date": "OUT/2025",
           "title": "Teoria da Inoculação aplicada ao letramento de fake news: Um estudo sobre o game Meias#Verdades.",
           "desc": "Análise do impacto cognitivo em estudantes de escolas parceiras do Nordeste do Brasil.",
-          "source": "KU Leuven Research"
+          "source": "",
+          "cta": "Ler artigo",
+          "url": "https://www.semanticscholar.org/reader/25c0b8e006d13d29ab4ec923951a48ac8a3f70ad"
         },
         {
-          "category": "NOTÍCIAS DE ACELERAÇÃO",
-          "date": "JAN/2026",
-          "title": "SUDENE apoia expansão do letramento midiático nas redes escolares de Pernambuco.",
-          "desc": "Startup Literacia Edu recebe aporte de aceleração para escalar jogos mobile educativos.",
-          "source": "Sudene Notícias"
+          "type": "artigo",
+          "category": "NOTÍCIAS",
+          "date": "JUN/2026",
+          "title": "Jornalista Karoline Fernandes lança livro que ensina a combater fake news",
+          "desc": "A publicação, resultado da pesquisa de doutorado desenvolvida na UFPE, explica como a inoculação psicológica pode ajudar o público a reconhecer conteúdos enganosos. A reportagem também destaca o desenvolvimento do jogo educativo Meias#Verdades, voltado para crianças e adolescentes.",
+          "source": "Giro Blog / Diário de Pernambuco",
+          "cta": "Ler reportagem",
+          "url": "https://giroblog.com.br/jornalista-karoline-fernandes-lanca-livro-que-ensina-a-combater-fake-news/"
         },
         {
+          "type": "artigo",
           "category": "FESTIVAL DE JOGOS",
           "date": "MAI/2026",
           "title": "Meias#Verdades concorre a prêmio de melhor jogo educativo do ano em congresso.",
           "desc": "O simulador de mídias sociais gamificado recebe reconhecimento técnico pela interatividade e design.",
-          "source": "Congresso SBGames"
+          "source": "",
+          "cta": "Ler artigo",
+          "url": "https://sol.sbc.org.br/index.php/sbgames/article/view/45476/45237"
         }
       ]
     },
@@ -254,7 +275,7 @@
     },
     "scienceTitle": "A Ciência do Letramento Midiático",
     "scienceDesc1": "Nossas soluções são baseadas no método Luden, criado pelo time de pesquisadoras da Literacia Edu e inspirado em princípios científicos da psicologia social, dos serious games (jogos sérios) e de abordagens do Design Centrado no Usuário (DCU). A palavra vem do latin ludere, que significa brincar, jogar ou praticar. O acrônimo une os conceitos que norteiam os nossos valores e princípios: Literacia, Usabilidade, Diversão e Engajamento.",
-    "founderTitle": "Nossa Fundadora",
+    "founderTitle": "Nossa Liderança",
     "scienceKicker": "Embasamento Acadêmico",
     "vacinaTitle": "Vacina Cognitiva",
     "vacinaDesc": "O letramento midiático na Literacia Edu não é passivo. Baseado na Teoria da Inoculação, ensinamos técnicas de manipulação antes que os jovens as sofram.",
@@ -306,6 +327,7 @@
         "Métricas de progresso em letramento midiático em tempo real para educadores."
       ],
       "audience": "Recomendado para Ensino Fundamental II e Ensino Médio (11 a 17 anos).",
+      "playCta": "Jogar online",
       "mockup": {
         "module": "MÓDULO 01",
         "quote": "\"Compartilhe esta mentira para ganhar pontos de engajamento.\"",
@@ -372,18 +394,99 @@
     "contactTitle": "Contato de Imprensa",
     "contactText": "Precisa de uma fonte acadêmica especialista em desinformação infantil, letramento midiático ou psicologia cognitiva aplicada à educação? Karoline Fernandes e nossa equipe estão disponíveis para entrevistas, palestras e consultoria de pautas.",
     "contactEmail": "contato@literaciaedu.com.br",
-    "releases": [
+    "mediaTitle": "Literacia Edu na Mídia",
+    "mediaSubtitle": "Reportagens, entrevistas e podcasts sobre o nosso trabalho.",
+    "media": [
       {
-        "date": "MAI/2026",
-        "category": "RELEASE INSTITUCIONAL",
-        "title": "EdTech Literacia Edu lança versão expandida de jogo de combate a desinformação em redes públicas.",
-        "desc": "Metodologias baseadas em prebunking (Teoria da Inoculação) apoiam educadores a desenvolver mentes alertas e diminuir a proliferação de notícias falsas."
+        "type": "podcast",
+        "category": "PODCAST",
+        "date": "OUT/2026",
+        "title": "Estratégias de desinformação",
+        "desc": "No programa Passando a Limpo, da Rádio Jornal, a pesquisadora Karoline Fernandes conversa sobre o desenvolvimento de um jogo on-line que ensina a reconhecer estratégias de desinformação e a identificar mecanismos de manipulação.",
+        "source": "Rádio Jornal / JC",
+        "cta": "Ouvir episódio",
+        "url": "https://jc.uol.com.br/radio-jornal/podcast/2026/10/12/estrategias-de-desinformacao.html"
       },
       {
-        "date": "MAR/2026",
-        "category": "APORTES & ACELERAÇÃO",
-        "title": "Letramento midiático de base científica ganha destaque e apoio do Fundo da SUDENE.",
-        "desc": "Aporte financeiro viabilizará testes de campo nacionais e adaptação do jogo Meias#Verdades para o mercado latino-americano."
+        "type": "artigo",
+        "category": "MOVIMENTO ECONÔMICO",
+        "date": "SET/2026",
+        "title": "Startups ganham espaço para negócios com investidores no Mangue.Bit",
+        "desc": "A reportagem aborda a edição comemorativa de dez anos do Mangue.Bit, evento realizado no Recife que reúne startups, investidores e empresas para estimular negócios e fortalecer o ecossistema de inovação do Nordeste. Entre as iniciativas apresentadas está a Literacia Edu, startup fundada por Karoline Fernandes, que desenvolve jogos digitais e ferramentas gamificadas para promover o letramento midiático e digital de crianças e adolescentes. Seu principal destaque é o jogo Meias Verdades, fundamentado na estratégia de prebunking, que prepara os usuários para reconhecer previamente táticas de manipulação e desinformação nas redes sociais. A reportagem também destaca os planos de expansão da startup por meio de uma plataforma educacional para redes públicas e privadas de ensino, com trilhas gamificadas para estudantes e ferramentas de apoio aos professores.",
+        "source": "Movimento Econômico",
+        "cta": "Ler reportagem",
+        "url": "https://movimentoeconomico.com.br/economia/negocios/2026/09/23/startups-ganham-espaco-para-negocios-com-investidores-no-mangue-bit/",
+        "instagram": "https://www.instagram.com/reel/DdpdBnuEZCq/"
+      },
+      {
+        "type": "artigo",
+        "category": "OPINIÃO",
+        "date": "AGO/2026",
+        "title": "Para enfrentar a desinformação, jornalistas com diploma!",
+        "desc": "A jornalista Karoline Fernandes defende a valorização da formação superior em Jornalismo como caminho para fortalecer a apuração rigorosa, a ética profissional e o acesso à informação de qualidade diante da disseminação de notícias falsas.",
+        "source": "Jornal do Comércio / JC",
+        "cta": "Ler reportagem",
+        "url": "https://jc.uol.com.br/opiniao/artigo/2026/08/20/para-enfrentar-a-desinformacao-jornalistas-com-diploma.html"
+      },
+      {
+        "type": "artigo",
+        "category": "CULTURA",
+        "date": "JUN/2026",
+        "title": "Jornalista e pesquisadora lança livro sobre como se proteger das fake news",
+        "desc": "A obra Meias#Verdades, de Karoline Fernandes, apresenta conceitos científicos sobre desinformação e propõe o uso do prebunking e de jogos educativos para preparar as pessoas a reconhecer táticas de manipulação antes de serem enganadas.",
+        "source": "JC",
+        "cta": "Ler reportagem",
+        "url": "https://jc.uol.com.br/cultura/2026/06/09/jornalista-e-pesquisadora-lanca-livro-sobre-como-se-proteger-das-fake-news.html"
+      },
+      {
+        "type": "artigo",
+        "category": "NOTÍCIAS",
+        "date": "JUN/2026",
+        "title": "Jornalista Karoline Fernandes lança livro que ensina a combater fake news",
+        "desc": "A publicação, resultado da pesquisa de doutorado desenvolvida na UFPE, explica como a inoculação psicológica pode ajudar o público a reconhecer conteúdos enganosos. A reportagem também destaca o desenvolvimento do jogo educativo Meias#Verdades, voltado para crianças e adolescentes.",
+        "source": "Giro Blog / Diário de Pernambuco",
+        "cta": "Ler reportagem",
+        "url": "https://giroblog.com.br/jornalista-karoline-fernandes-lanca-livro-que-ensina-a-combater-fake-news/"
+      },
+      {
+        "type": "artigo",
+        "category": "NOTÍCIAS",
+        "date": "JUN/2026",
+        "title": "Livro de pesquisadora pernambucana propõe criar “anticorpos mentais” contra fake news",
+        "desc": "A reportagem aborda a proposta de desenvolver resistência à desinformação por meio do prebunking, método que apresenta previamente estratégias de manipulação, com explicações e refutações. O texto também destaca os mecanismos emocionais e cognitivos envolvidos na aceitação de informações falsas e o potencial dos jogos educativos para desenvolver o pensamento crítico.",
+        "source": "Revista O Grito!",
+        "cta": "Ler reportagem",
+        "url": "https://revistaogrito.com/livro-de-pesquisadora-pernambucana-propoe-criar-anticorpos-mentais-contra-fake-news/"
+      },
+      {
+        "type": "video",
+        "category": "REPORTAGEM",
+        "date": "",
+        "title": "A Teoria da Inoculação Psicológica no Jogo Meias Verdades",
+        "desc": "A reportagem apresenta o desenvolvimento do jogo digital Meias Verdades, por pesquisadores da UFPE, com fase de testes coordenada por Karoline Fernandes. A iniciativa fundamenta-se na teoria da inoculação psicológica, que funciona como uma vacina cognitiva: ao entrar em contato com versões enfraquecidas de estratégias de desinformação e aprender como elas operam, o jogador desenvolve recursos para reconhecer tentativas de manipulação e resistir a conteúdos enganosos na vida real.",
+        "source": "TV Cultura",
+        "cta": "Assistir à reportagem",
+        "url": "https://www.youtube.com/watch?v=m2_G8EusIoU"
+      },
+      {
+        "type": "video",
+        "category": "ENTREVISTA",
+        "date": "",
+        "title": "Prebunking, Letramento Midiático e Jogos Sérios",
+        "desc": "Em entrevista à TV Senado, a Dra. Karoline Fernandes explica as limitações da checagem posterior dos fatos (debunking) e destaca a importância de estratégias preventivas. Por meio do prebunking e de jogos sérios (serious games), a proposta é capacitar os participantes a reconhecer cinco táticas de manipulação: polarização, falsa identidade, difamação, apelo emocional e conspiração. A entrevista também enfatiza a necessidade de incorporar o letramento midiático ao currículo escolar, promovendo o pensamento crítico e a autonomia diante das informações.",
+        "source": "TV Senado",
+        "cta": "Assistir à entrevista",
+        "url": "https://www.youtube.com/watch?v=j-E8kG70J0U"
+      },
+      {
+        "type": "radio",
+        "category": "ENTREVISTA",
+        "date": "OUT/2026",
+        "title": "Vacina Cognitiva, Imparcialidade e Políticas Educacionais",
+        "desc": "Na entrevista à Rádio Jornal, a Dra. Karoline Fernandes destaca o caráter transversal da desinformação e sua relação com ambientes de polarização e apelos emocionais. Como estratégia de enfrentamento, defende uma abordagem preventiva, fundamentada na inoculação psicológica e no desenvolvimento de habilidades cognitivas.",
+        "source": "Rádio Jornal",
+        "cta": "Assistir à entrevista",
+        "url": "https://www.youtube.com/watch?v=1a3og9z-gpY&t=3655s"
       }
     ]
   },

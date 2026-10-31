@@ -20,13 +20,13 @@ export default async function AboutPage({ params }: AboutPageProps) {
     <div className="relative w-full overflow-hidden bg-[#F4F8F9]">
       
       {/* HEADER SECTION */}
-      <section className="relative pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
+      <section className="relative pt-16 md:pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-bright-teal/30 rounded-full blur-3xl" />
         </div>
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-6 relative z-10">
           <FadeIn direction="up">
-            <span className="font-energize text-brand-yellow text-5xl sm:text-6xl lg:text-7xl">
+            <span className="font-energize text-brand-yellow text-4xl sm:text-5xl lg:text-7xl">
               {dict.common.nav.about}
             </span>
           </FadeIn>
@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
       {/* HISTORY SECTION */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <FadeIn direction="right">
               <p className="text-[#0B1E21]/80 text-sm sm:text-base leading-relaxed font-sans font-light">
@@ -107,7 +107,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
           {/* Core Values */}
           <div className="text-center mb-12 flex flex-col gap-2">
-            <span className="font-energize text-bright-teal text-5xl sm:text-6xl lg:text-7xl">{dict.about.values.title}</span>
+            <span className="font-energize text-bright-teal text-4xl sm:text-5xl lg:text-7xl">{dict.about.values.title}</span>
           </div>
 
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -137,7 +137,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
       {/* THE SCIENCE BEHIND IT */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-5 flex justify-center order-last lg:order-first">
             <FadeIn direction="right" className="w-full max-w-sm">
               <div className="relative aspect-square w-full rounded-2xl bg-gradient-to-br from-[#05242A] to-[#076476] border border-white/10 p-8 flex flex-col items-center justify-center gap-6 shadow-2xl text-center group hover:shadow-bright-teal/20 transition-all duration-400">
@@ -153,7 +153,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             <FadeIn direction="left">
-              <span className="font-energize text-bright-teal text-5xl sm:text-6xl lg:text-7xl">{dict.about.scienceKicker}</span>
+              <span className="font-energize text-bright-teal text-4xl sm:text-5xl lg:text-7xl">{dict.about.scienceKicker}</span>
             </FadeIn>
             <FadeIn direction="left" delay={0.1} className="flex flex-col gap-4 text-[#0B1E21]/80 text-sm sm:text-base leading-loose font-sans font-light">
               <p>{dict.about.scienceDesc1}</p>
@@ -168,7 +168,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             <FadeIn direction="right">
-              <span className="font-energize text-brand-yellow text-5xl sm:text-6xl lg:text-7xl">{dict.about.founderTitle}</span>
+              <span className="font-energize text-brand-yellow text-4xl sm:text-5xl lg:text-7xl">{dict.about.founderTitle}</span>
             </FadeIn>
             <FadeIn direction="right" delay={0.1}>
               <span className="font-energize text-white/90 text-3xl sm:text-4xl lg:text-5xl flex flex-col leading-tight">
@@ -207,12 +207,50 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#031417]/90 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 z-10 p-6 flex flex-col items-center gap-2">
-                    <span className="font-spaceboards text-lg uppercase tracking-wider text-brand-yellow">{dict.home.founder.name}</span>
-                    <span className="text-[10px] text-white/70 tracking-widest font-sans uppercase whitespace-pre-line">{dict.home.founder.roleLabel}</span>
+                    <span className="font-spaceboards text-lg uppercase tracking-wider text-brand-yellow text-center">{dict.home.founder.name}</span>
+                    <span className="text-[10px] text-white/70 tracking-widest font-sans uppercase whitespace-pre-line text-center">{dict.home.founder.roleLabel}</span>
                   </div>
                 </div>
               </div>
             </FadeIn>
+          </div>
+
+          {/* CTO BLOCK */}
+          <div className="relative z-10 lg:col-span-12 pt-12 border-t border-white/10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              <div className="lg:col-span-5 flex justify-center order-last lg:order-first">
+                <FadeIn direction="right" className="w-full max-w-xs">
+                  <div className="relative aspect-[4/5] w-full bg-[#05242A] border border-white/15 rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src="/images/cto.jpeg"
+                      alt="CTO - Felipe Reed"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) calc(100vw - 48px), 320px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#031417]/90 via-transparent to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 z-10 p-6 flex flex-col items-center gap-2">
+                      <span className="font-spaceboards text-lg uppercase tracking-wider text-brand-yellow text-center">{dict.home.cto.name}</span>
+                      <span className="text-[10px] text-white/70 tracking-widest font-sans uppercase text-center">{dict.home.cto.roleLabel}</span>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+
+              <div className="lg:col-span-7 flex flex-col items-start gap-4">
+                <FadeIn direction="left" delay={0.1}>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xl font-bold text-brand-yellow font-sans">{dict.home.cto.name}</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-bright-teal font-sans">{dict.home.cto.role}</span>
+                  </div>
+                </FadeIn>
+                <FadeIn direction="left" delay={0.2}>
+                  <p className="text-white/85 text-sm sm:text-base leading-relaxed font-sans font-light">
+                    {dict.home.cto.bio}
+                  </p>
+                </FadeIn>
+              </div>
+            </div>
           </div>
         </div>
       </section>

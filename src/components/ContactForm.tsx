@@ -167,7 +167,7 @@ export default function ContactForm({
             value={formData.name}
             onChange={handleChange}
             placeholder={labels.namePlaceholder}
-            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-sm ${
+            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-base md:text-sm ${
               errors.name
                 ? "border-red-400 focus:border-red-500 focus:ring-2 focus:ring-red-100"
                 : "border-primary-teal/15 focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10"
@@ -194,7 +194,7 @@ export default function ContactForm({
             value={formData.institution}
             onChange={handleChange}
             placeholder={labels.institutionPlaceholder}
-            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-sm ${
+            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-base md:text-sm ${
               errors.institution
                 ? "border-red-400 focus:border-red-500 focus:ring-2 focus:ring-red-100"
                 : "border-primary-teal/15 focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10"
@@ -224,7 +224,7 @@ export default function ContactForm({
             value={formData.role}
             onChange={handleChange}
             placeholder={labels.rolePlaceholder}
-            className="w-full px-4 py-3 rounded-xl border border-primary-teal/15 bg-white focus:outline-none focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10 transition-all duration-200 text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-primary-teal/15 bg-white focus:outline-none focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10 transition-all duration-200 text-base md:text-sm"
           />
         </div>
 
@@ -240,7 +240,7 @@ export default function ContactForm({
             value={formData.email}
             onChange={handleChange}
             placeholder={labels.emailPlaceholder}
-            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-sm ${
+            className={`w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-200 text-base md:text-sm ${
               errors.email
                 ? "border-red-400 focus:border-red-500 focus:ring-2 focus:ring-red-100"
                 : "border-primary-teal/15 focus:border-bright-teal focus:ring-2 focus:ring-bright-teal/10"
@@ -287,7 +287,7 @@ export default function ContactForm({
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full inline-flex items-center justify-center gap-2 bg-brand-yellow text-[#05242A] font-bold py-4 rounded-xl hover:bg-primary-teal hover:text-white transition-all duration-300 shadow-md shadow-brand-yellow/20 disabled:bg-brand-yellow/50 disabled:cursor-not-allowed text-sm focus:ring-2 focus:ring-bright-teal/20 hover:-translate-y-0.5"
+        className="w-full inline-flex items-center justify-center gap-2 bg-brand-yellow text-[#05242A] font-bold py-4 rounded-xl hover:bg-primary-teal hover:text-white transition-all duration-300 shadow-md shadow-brand-yellow/20 disabled:bg-brand-yellow/50 disabled:cursor-not-allowed text-base md:text-sm focus:ring-2 focus:ring-bright-teal/20 hover:-translate-y-0.5"
       >
         <Send className="w-4 h-4" />
         {status === "sending" ? sendingLabel : submitLabel}

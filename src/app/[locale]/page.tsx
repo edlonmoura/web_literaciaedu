@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Target, Brain, Award, Newspaper, Dna, Globe, Eye, Shield, Syringe, Gamepad2, Zap, BarChart3 } from "lucide-react"
+import { ArrowRight, Target, Brain, Award, Newspaper, Dna, Eye, Shield, Syringe, Gamepad2, Zap, BarChart3, ExternalLink, Tv, Radio, Podcast } from "lucide-react"
 import { getDictionary, validLocale } from "@/lib/get-dictionary"
 import { FadeIn, FloatingElement, ScaleIn, StaggerContainer, StaggerItem, SwayingFloat } from "@/components/InteractiveComponents"
+import HeroSlideshow from "@/components/HeroSlideshow"
 
 interface HomePageProps {
   params: Promise<{ locale: string }>
@@ -19,9 +20,9 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const partners = [
     { name: "UFPE", type: dict.home.partners.types.academic },
-    { name: "KU Leuven", type: dict.home.partners.types.research },
+    { name: "PREFEITURA DE PAUDALHO/PE", type: dict.home.partners.types.municipal },
     { name: "Sudene", type: dict.home.partners.types.acceleration },
-    { name: "UFRPE", type: dict.home.partners.types.academic },
+    { name: "LACREI-UFRPE", type: dict.home.partners.types.academic },
     { name: "SEMAS", type: dict.home.partners.types.government }
   ]
 
@@ -50,7 +51,7 @@ export default async function HomePage({ params }: HomePageProps) {
       />
       
       {/* SECTION 1: HERO */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-6 lg:px-8 py-20 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white">
+      <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center px-6 lg:px-8 py-16 lg:py-20 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white">
         {/* Animated Background Mesh */}
         <div className="absolute inset-0 z-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bright-teal/30 rounded-full blur-3xl animate-pulse" />
@@ -68,7 +69,7 @@ export default async function HomePage({ params }: HomePageProps) {
             </FadeIn>
             
             <FadeIn direction="right" delay={0.2}>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-energize font-bold text-white leading-[1.1] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-energize font-bold text-white leading-[1.1] tracking-tight">
                 {dict.home.hero.title}
               </h1>
             </FadeIn>
@@ -121,17 +122,9 @@ export default async function HomePage({ params }: HomePageProps) {
                   </div>
                   
                   {/* Styled Inner Mockup Graphic */}
-                  <div className="w-full h-full bg-[#05242A] relative flex items-center justify-center">
-                    {/* Brand Symbol Fox Placeholder */}
-                    <div className="relative w-40 h-40 opacity-90 transition-transform duration-300 group-hover:scale-105 -mt-12">
-                      <Image
-                        src="/images/logo_literacia.png"
-                        alt="Literacia Edu Fox Symbol"
-                        fill
-                        className="object-contain"
-                        sizes="160px"
-                      />
-                    </div>
+                  <div className="w-full h-full bg-[#05242A] relative overflow-hidden">
+                    <HeroSlideshow />
+                    <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#05242A] via-[#05242A]/35 to-transparent pointer-events-none" />
                   </div>
                 </div>
               </FloatingElement>
@@ -151,16 +144,15 @@ export default async function HomePage({ params }: HomePageProps) {
             </FadeIn>
           </div>
 
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {dict.home.impact.items.map((item, index) => {
-              const iconColors = ["text-bright-teal", "text-brand-yellow", "text-brand-orange", "text-primary-teal"]
-              const accentColors = ["from-bright-teal/15 to-bright-teal/5", "from-brand-yellow/15 to-brand-yellow/5", "from-brand-orange/15 to-brand-orange/5", "from-primary-teal/15 to-primary-teal/5"]
-              const borderColors = ["border-t-bright-teal", "border-t-brand-yellow", "border-t-brand-orange", "border-t-primary-teal"]
+              const iconColors = ["text-bright-teal", "text-brand-yellow", "text-brand-orange"]
+              const accentColors = ["from-bright-teal/15 to-bright-teal/5", "from-brand-yellow/15 to-brand-yellow/5", "from-brand-orange/15 to-brand-orange/5"]
+              const borderColors = ["border-t-bright-teal", "border-t-brand-yellow", "border-t-brand-orange"]
               const icons = [
                 <Dna key="dna" className="w-7 h-7" />,
                 <Target key="target" className="w-7 h-7" />,
-                <Award key="award" className="w-7 h-7" />,
-                <Globe key="globe" className="w-7 h-7" />
+                <Award key="award" className="w-7 h-7" />
               ]
               return (
                 <StaggerItem key={index}>
@@ -204,7 +196,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 flex flex-col gap-3">
             <FadeIn direction="up">
-              <span className="font-energize text-bright-teal text-5xl sm:text-6xl lg:text-7xl">
+              <span className="font-energize text-bright-teal text-4xl sm:text-5xl lg:text-7xl">
                 {dict.home.importance.kicker}
               </span>
             </FadeIn>
@@ -270,7 +262,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20 flex flex-col gap-4">
             <FadeIn direction="up">
-              <span className="font-energize text-brand-yellow text-5xl sm:text-6xl lg:text-7xl">
+              <span className="font-energize text-brand-yellow text-4xl sm:text-5xl lg:text-7xl">
                 {dict.home.solutions.kicker}
               </span>
             </FadeIn>
@@ -373,10 +365,10 @@ export default async function HomePage({ params }: HomePageProps) {
       {/* SECTION 5: METODOLOGIA CIENTÍFICA */}
       <section className="py-24 bg-gradient-to-b from-[#F4F8F9] via-[#E6F0F2] to-[#F4F8F9] relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Graphics */}
             <div className="lg:col-span-5 flex flex-col items-center gap-8">
-              <div className="grid grid-cols-2 gap-4 relative w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative w-full">
                 <div className="absolute inset-0 bg-bright-teal/10 blur-3xl rounded-full z-0" />
               {dict.home.methodology.cards.map((card, index) => {
                 const iconColors = ["text-bright-teal", "text-brand-yellow", "text-brand-orange", "text-primary-teal"]
@@ -418,7 +410,7 @@ export default async function HomePage({ params }: HomePageProps) {
             {/* Right Content */}
             <div className="lg:col-span-7 flex flex-col items-start gap-6">
               <FadeIn direction="left">
-                <span className="font-energize text-bright-teal text-5xl sm:text-6xl lg:text-7xl">
+                <span className="font-energize text-bright-teal text-4xl sm:text-5xl lg:text-7xl">
                   {dict.home.methodology.kicker}
                 </span>
               </FadeIn>
@@ -454,10 +446,10 @@ export default async function HomePage({ params }: HomePageProps) {
             </FadeIn>
           </div>
 
-          <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {partners.map((partner, index) => (
-              <StaggerItem key={index} className="flex flex-col items-center justify-center p-6 bg-white/80 backdrop-blur-sm border border-primary-teal/10 rounded-2xl hover:bg-white hover:shadow-md hover:border-bright-teal/30 transition-all duration-300 group select-none">
-                <span className="font-spaceboards text-primary-teal/60 text-xl tracking-wider group-hover:text-bright-teal transition-colors">
+              <StaggerItem key={index} className="flex flex-col items-center justify-center p-4 bg-white/80 backdrop-blur-sm border border-primary-teal/10 rounded-2xl hover:bg-white hover:shadow-md hover:border-bright-teal/30 transition-all duration-300 group select-none text-center">
+                <span className="font-spaceboards text-primary-teal/60 text-[11px] sm:text-sm md:text-base lg:text-sm xl:text-base 2xl:text-xl tracking-wide md:tracking-wider break-words w-full group-hover:text-bright-teal transition-colors">
                   {partner.name}
                 </span>
                 <span className="text-[10px] text-primary-teal/50 group-hover:text-primary-teal transition-colors font-medium mt-1 font-sans">
@@ -475,7 +467,7 @@ export default async function HomePage({ params }: HomePageProps) {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
             <div className="flex flex-col gap-3 max-w-2xl text-left">
               <FadeIn direction="right">
-                <span className="font-energize text-bright-teal text-5xl sm:text-6xl lg:text-7xl">
+                <span className="font-energize text-bright-teal text-4xl sm:text-5xl lg:text-7xl">
                   {dict.home.press.kicker}
                 </span>
               </FadeIn>
@@ -508,30 +500,58 @@ export default async function HomePage({ params }: HomePageProps) {
           </div>
 
           {/* Grayscale news slots (waiting content) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {dict.home.press.articles.map((article, index) => (
-              <FadeIn key={index} direction="up" delay={0.1 + index * 0.1} className="flex">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl border border-primary-teal/10 flex flex-col justify-between gap-6 shadow-sm hover:shadow-md transition-shadow w-full">
-                  <div className="flex flex-col gap-3">
-                    <div className="flex items-center gap-2 text-[11px] text-primary-teal/70 font-semibold font-sans">
-                      <Newspaper className="w-3.5 h-3.5" />
-                      <span>{article.category}</span>
-                      <span>•</span>
-                      <span>{article.date}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {dict.home.press.articles.map((article, index) => {
+              const icon = article.type === "video" ? (
+                <Tv className="w-3.5 h-3.5" />
+              ) : article.type === "podcast" ? (
+                <Podcast className="w-3.5 h-3.5" />
+              ) : article.type === "radio" ? (
+                <Radio className="w-3.5 h-3.5" />
+              ) : (
+                <Newspaper className="w-3.5 h-3.5" />
+              )
+              return (
+                <FadeIn key={index} direction="up" delay={Math.min(0.08 + index * 0.06, 0.5)} className="flex">
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-white/90 backdrop-blur-sm p-6 rounded-2xl border border-primary-teal/10 flex flex-col justify-between gap-6 shadow-sm hover:shadow-lg hover:border-primary-teal/30 hover:-translate-y-1 transition-all duration-300 w-full"
+                  >
+                    <div className="flex flex-col gap-3">
+                      <div className="flex items-center gap-2 text-[11px] text-primary-teal/70 font-semibold font-sans">
+                        {icon}
+                        <span>{article.category}</span>
+                        {article.date && (
+                          <>
+                            <span>•</span>
+                            <span>{article.date}</span>
+                          </>
+                        )}
+                      </div>
+                      <h3 className="font-semibold text-base text-primary-teal font-sans leading-snug group-hover:text-bright-teal transition-colors">
+                        {article.title}
+                      </h3>
+                      <p className="text-xs text-[#0B1E21]/75 leading-relaxed font-sans font-light">
+                        {article.desc}
+                      </p>
                     </div>
-                    <h3 className="font-semibold text-base text-primary-teal font-sans leading-snug">
-                      {article.title}
-                    </h3>
-                    <p className="text-xs text-[#0B1E21]/75 leading-relaxed font-sans font-light">
-                      {article.desc}
-                    </p>
-                  </div>
-                  <span className="text-xs text-[#0B1E21]/50 font-semibold uppercase tracking-wider font-sans">
-                    {article.source}
-                  </span>
-                </div>
-              </FadeIn>
-            ))}
+                    <div className="flex items-center justify-between gap-3 pt-1">
+                      {article.source && (
+                        <span className="text-xs text-[#0B1E21]/50 font-semibold uppercase tracking-wider font-sans">
+                          {article.source}
+                        </span>
+                      )}
+                      <span className="ml-auto inline-flex items-center gap-1.5 text-xs font-semibold text-primary-teal group-hover:text-bright-teal transition-colors font-sans shrink-0">
+                        {article.cta}
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </span>
+                    </div>
+                  </a>
+                </FadeIn>
+              )
+            })}
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import { getDictionary, validLocale } from "@/lib/get-dictionary"
 import { FadeIn, ScaleIn } from "@/components/InteractiveComponents"
-import { BookOpen, Clock, Users, ArrowRight, ShieldCheck } from "lucide-react"
+import { BookOpen, Clock, Users, ArrowRight, ShieldCheck, Gamepad2, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -21,13 +21,13 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
     <div className="relative w-full overflow-hidden bg-[#F4F8F9]">
       
       {/* HEADER */}
-      <section className="relative pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
+      <section className="relative pt-16 md:pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-[#05242A] via-[#076476] to-[#04333D] text-white border-b border-white/10">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-bright-teal/30 rounded-full blur-3xl" />
         </div>
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-6 relative z-10">
           <FadeIn direction="up">
-            <span className="font-energize text-brand-yellow text-5xl sm:text-6xl lg:text-7xl">
+            <span className="font-energize text-brand-yellow text-4xl sm:text-5xl lg:text-7xl">
               {dict.common.nav.solutions}
             </span>
           </FadeIn>
@@ -42,7 +42,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
 
       {/* SOLUTION 1: MEIAS VERDADES MOBILE */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Visual side */}
           <div className="lg:col-span-5 flex justify-center">
             <FadeIn direction="right" className="w-full max-w-sm">
@@ -54,6 +54,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
                   alt="Meias Verdades - Jogo Mobile"
                   width={340}
                   height={600}
+                  sizes="(max-width: 640px) calc(100vw - 48px), 340px"
                   className="w-full h-auto"
                 />
               </div>
@@ -63,9 +64,21 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
           {/* Content side */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             <FadeIn direction="left">
-              <span className="px-3.5 py-1.5 rounded-full bg-bright-teal/15 border border-bright-teal/30 text-primary-teal text-xs font-bold uppercase tracking-wider font-sans">
-                Edição Digital
-              </span>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="px-3.5 py-1.5 rounded-full bg-bright-teal/15 border border-bright-teal/30 text-primary-teal text-xs font-bold uppercase tracking-wider font-sans">
+                  Edição Digital
+                </span>
+                <a
+                  href="https://jogomeiasverdades.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary-teal text-white text-xs font-bold uppercase tracking-wider font-sans px-4 py-2 rounded-full hover:bg-bright-teal transition-colors duration-300 shadow-sm hover:shadow-md"
+                >
+                  <Gamepad2 className="w-4 h-4" />
+                  {dict.solutions.meiasVerdades.playCta}
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </FadeIn>
 
             <FadeIn direction="left" delay={0.15}>
@@ -103,7 +116,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
 
       {/* SOLUTION 2: MEIAS VERDADES MEMORY CARD GAME */}
       <section className="py-24 bg-gradient-to-b from-[#EBF3F5] via-[#F4F8F9] to-[#EBF3F5] border-y border-primary-teal/10 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* Content side */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6 order-last lg:order-first">
@@ -147,19 +160,19 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
           {/* Visual card deck mockup */}
           <div className="lg:col-span-5 flex justify-center">
             <FadeIn direction="left" className="w-full max-w-sm">
-              <div className="relative aspect-square w-full bg-gradient-to-br from-[#05242A] to-[#076476] border border-white/10 rounded-2xl p-8 shadow-2xl flex flex-col items-center overflow-hidden group">
+              <div className="relative aspect-square w-full bg-gradient-to-br from-[#05242A] to-[#076476] border border-white/10 rounded-2xl p-5 sm:p-8 shadow-2xl flex flex-col items-center overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-bright-teal/20 to-brand-yellow/10 opacity-50" />
                 
                 {/* Real card images */}
-                <div className="flex justify-center items-center gap-4 relative z-10 mt-auto mb-auto">
-                  <div className="relative w-[120px] h-[170px] rounded-xl overflow-hidden shadow-2xl rotate-[-8deg] border-2 border-white/20 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
-                    <Image src="/images/meias_verdades_esquerda.png" alt="Carta esquerda" fill className="object-cover" sizes="140px" />
+                <div className="flex justify-center items-center gap-2 sm:gap-4 relative z-10 mt-auto mb-auto w-full">
+                  <div className="relative w-[30%] max-w-[120px] aspect-[12/17] rounded-xl overflow-hidden shadow-2xl rotate-[-8deg] border-2 border-white/20 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
+                    <Image src="/images/meias_verdades_esquerda.png" alt="Carta esquerda" fill className="object-cover" sizes="(max-width: 640px) 90px, 120px" />
                   </div>
-                  <div className="relative w-[120px] h-[170px] rounded-xl overflow-hidden shadow-2xl rotate-[3deg] border-2 border-white/30 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
-                    <Image src="/images/meias_verdades_meio.png" alt="Carta meio" fill className="object-cover" sizes="140px" />
+                  <div className="relative w-[30%] max-w-[120px] aspect-[12/17] rounded-xl overflow-hidden shadow-2xl rotate-[3deg] border-2 border-white/30 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
+                    <Image src="/images/meias_verdades_meio.png" alt="Carta meio" fill className="object-cover" sizes="(max-width: 640px) 90px, 120px" />
                   </div>
-                  <div className="relative w-[120px] h-[170px] rounded-xl overflow-hidden shadow-2xl rotate-[8deg] border-2 border-white/20 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
-                    <Image src="/images/meias_verdades_direita.png" alt="Carta direita" fill className="object-cover" sizes="140px" />
+                  <div className="relative w-[30%] max-w-[120px] aspect-[12/17] rounded-xl overflow-hidden shadow-2xl rotate-[8deg] border-2 border-white/20 hover:rotate-0 hover:translate-y-[-8px] transition-all duration-350">
+                    <Image src="/images/meias_verdades_direita.png" alt="Carta direita" fill className="object-cover" sizes="(max-width: 640px) 90px, 120px" />
                   </div>
                 </div>
 
@@ -176,7 +189,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
 
       {/* SOLUTION 3: LIVRO MEIAS#VERDADES */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Visual side */}
           <div className="lg:col-span-5 flex justify-center order-first lg:order-last">
             <FadeIn direction="left" className="w-full max-w-sm">
@@ -186,6 +199,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
                   alt="Livro Meias#Verdades - Karoline Fernandes"
                   width={340}
                   height={480}
+                  sizes="(max-width: 640px) calc(100vw - 48px), 340px"
                   className="w-full h-auto"
                 />
               </div>
@@ -235,7 +249,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
 
       {/* SOLUTION 4: CODIGO PATA */}
       <section className="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Visual side */}
           <div className="lg:col-span-5 flex justify-center">
             <FadeIn direction="right" className="w-full max-w-sm">
@@ -247,7 +261,7 @@ export default async function SolutionsPage({ params }: SolutionsPageProps) {
                 
                 {/* Tech grid representations */}
                 <div className="w-full flex-1 relative z-10 mt-6 overflow-hidden rounded-2xl">
-                  <Image src="/images/logo_pata.png" alt="Código P.A.T.A." width={400} height={300} className="w-full h-full object-cover" />
+                  <Image src="/images/logo_pata.png" alt="Código P.A.T.A." width={400} height={300} sizes="(max-width: 640px) calc(100vw - 96px), 320px" className="w-full h-full object-cover" />
                 </div>
 
                 <div className="text-white mt-auto relative z-10 flex flex-col gap-1">

@@ -62,11 +62,6 @@
           "value": "15+",
           "label": "Awards & Grants",
           "desc": "Supported by local and international programs"
-        },
-        {
-          "value": "3",
-          "label": "Languages",
-          "desc": "Ready for global scale"
         }
       ]
     },
@@ -102,7 +97,7 @@
           "title": "Meias#Verdades",
           "desc": "A revolutionary educational mobile game based on Inoculation Theory (prebunking). Young people learn disinformation techniques by playing as content creators, building 'mental antibodies' against online manipulation.",
           "badge": "Mobile Game",
-          "support": "Support: KU Leuven"
+          "support": "Support: SUDENE"
         },
         "meiasVerdadesMemory": {
           "title": "Meias#Verdades Memory Game",
@@ -117,7 +112,7 @@
         },
         "codigoPata": {
           "title": "Código P.A.T.A.",
-          "desc": "Our next digital platform under development. A complete gamified ecosystem for schools that expands computational and media literacy skills for middle school students.",
+          "desc": "Educational games, micro-lessons and playful approaches are part of the set of actions of the Código P.A.T.A (Protect, Learn, Treat, Love) project, which aims to raise children's and adolescents' awareness of animal welfare. The initiative is run by the Pernambuco startup Literacia Edu in partnership with the Laboratory of Consumption and Inventive Responses (Lacrei) at the Federal Rural University of Pernambuco (UFRPE) and the Secretariat of Environment, Sustainability and of Fernando de Noronha of Pernambuco (Semas-PE).",
           "badge": "Under development",
           "launch": "Release scheduled for next semester."
         }
@@ -173,13 +168,20 @@
       "bio": "Journalist, master's in Communication and doctorate in Information Science, Karoline Fernandes has a solid trajectory as a researcher, focusing on Media Literacy and Serious Games. As founder of Literacia Edu, the entrepreneur has a clear vision: to transform cutting-edge scientific research into practical, high social impact and fun solutions! With international research experience, she coordinates the development of projects like Meias#Verdades and Código Pata, leading the startup's national and international expansion.",
       "quote": "\"Our mission is to equip children and teens with the cognitive antibodies required to navigate the internet with independence and safety.\""
     },
+    "cto": {
+      "name": "Felipe Reed",
+      "role": "CTO of Literacia",
+      "roleLabel": "designer and software developer",
+      "bio": "Felipe Reed is a designer and software developer, combining creativity, technology and strategic thinking to create digital experiences that are functional, intuitive and visually impactful."
+    },
     "partners": {
       "title": "Institutional Partners & Support",
       "types": {
         "academic": "Academic",
         "research": "International Research",
         "acceleration": "Funding / Acceleration",
-        "government": "Government / Projects"
+        "government": "Government / Projects",
+        "municipal": "Local Government"
       }
     },
     "press": {
@@ -190,25 +192,44 @@
       "readMore": "Read full article",
       "articles": [
         {
+          "type": "artigo",
+          "category": "CULTURE",
+          "date": "JUN/2026",
+          "title": "Journalist and researcher launches book on how to protect yourself from fake news",
+          "desc": "Karoline Fernandes' book Meias#Verdades presents scientific concepts about disinformation and proposes using prebunking and educational games to prepare people to recognize manipulation tactics before being deceived.",
+          "source": "JC",
+          "cta": "Read article",
+          "url": "https://jc.uol.com.br/cultura/2026/06/09/jornalista-e-pesquisadora-lanca-livro-sobre-como-se-proteger-das-fake-news.html"
+        },
+        {
+          "type": "artigo",
           "category": "ACADEMIC PAPER",
           "date": "OCT/2025",
           "title": "Inoculation Theory applied to fake news literacy: A study on the Meias#Verdades game.",
           "desc": "Analysis of cognitive impact on students from partner schools in Northeast Brazil.",
-          "source": "KU Leuven Research"
+          "source": "",
+          "cta": "Read article",
+          "url": "https://www.semanticscholar.org/reader/25c0b8e006d13d29ab4ec923951a48ac8a3f70ad"
         },
         {
-          "category": "ACCELERATION NEWS",
-          "date": "JAN/2026",
-          "title": "SUDENE supports expansion of media literacy in Pernambuco school networks.",
-          "desc": "Literacia Edu startup receives acceleration funding to scale educational mobile games.",
-          "source": "Sudene News"
+          "type": "artigo",
+          "category": "NEWS",
+          "date": "JUN/2026",
+          "title": "Journalist Karoline Fernandes launches book that teaches how to combat fake news",
+          "desc": "The publication, the result of doctoral research at UFPE, explains how psychological inoculation can help the public recognize misleading content. The report also highlights the development of the educational game Meias#Verdades, aimed at children and teenagers.",
+          "source": "Giro Blog / Diário de Pernambuco",
+          "cta": "Read article",
+          "url": "https://giroblog.com.br/jornalista-karoline-fernandes-lanca-livro-que-ensina-a-combater-fake-news/"
         },
         {
+          "type": "artigo",
           "category": "GAMES FESTIVAL",
           "date": "MAY/2026",
           "title": "Meias#Verdades nominated for best educational game of the year at congress.",
           "desc": "The gamified social media simulator receives technical recognition for interactivity and design.",
-          "source": "SBGames Congress"
+          "source": "",
+          "cta": "Read article",
+          "url": "https://sol.sbc.org.br/index.php/sbgames/article/view/45476/45237"
         }
       ]
     },
@@ -254,7 +275,7 @@
     },
     "scienceTitle": "The Science of Media Literacy",
     "scienceDesc1": "Our solutions are based on the Luden method, created by Literacia Edu's research team and inspired by scientific principles from social psychology, serious games, and User-Centered Design (UCD) approaches. The word comes from the Latin ludere, meaning to play, to game, or to practice. The acronym unites the concepts that guide our values and principles: Literacy, Usability, Fun, and Engagement.",
-    "founderTitle": "Our Founder",
+    "founderTitle": "Our Leadership",
     "scienceKicker": "Academic Foundation",
     "vacinaTitle": "Cognitive Vaccine",
     "vacinaDesc": "Media literacy at Literacia Edu is not passive. Based on Inoculation Theory, we teach manipulation techniques before young people experience them.",
@@ -306,6 +327,7 @@
         "Real-time media literacy progress metrics for educators."
       ],
       "audience": "Recommended for middle and high schools (ages 11 to 17).",
+      "playCta": "Play online",
       "mockup": {
         "module": "MODULE 01",
         "quote": "\"Share this lie to earn engagement points.\"",
@@ -372,18 +394,99 @@
     "contactTitle": "Press Contacts",
     "contactText": "Need a scientific expert to talk about child disinformation, media literacy, or cognitive psychology applied to education? Karoline Fernandes and our team are available for interviews, talks, and editorial consults.",
     "contactEmail": "contato@literaciaedu.com.br",
-    "releases": [
+    "mediaTitle": "Literacia Edu in the Media",
+    "mediaSubtitle": "Reports, interviews and podcasts about our work.",
+    "media": [
       {
-        "date": "MAY/2026",
-        "category": "INSTITUTIONAL RELEASE",
-        "title": "Literacia Edu EdTech launches expanded version of anti-disinformation game in public networks.",
-        "desc": "Prebunking-based methodologies (Inoculation Theory) support educators in developing alert minds and reducing the spread of fake news."
+        "type": "podcast",
+        "category": "PODCAST",
+        "date": "OCT/2026",
+        "title": "Disinformation strategies",
+        "desc": "On the Passando a Limpo program on Rádio Jornal, researcher Karoline Fernandes talks about the development of an online game that teaches how to recognize disinformation strategies and identify manipulation mechanisms.",
+        "source": "Rádio Jornal / JC",
+        "cta": "Listen to episode",
+        "url": "https://jc.uol.com.br/radio-jornal/podcast/2026/10/12/estrategias-de-desinformacao.html"
       },
       {
-        "date": "MAR/2026",
-        "category": "FUNDING & ACCELERATION",
-        "title": "Science-based media literacy gains prominence and support from SUDENE Fund.",
-        "desc": "Financial support will enable national field tests and adaptation of the Meias#Verdades game for the Latin American market."
+        "type": "artigo",
+        "category": "BUSINESS NEWS",
+        "date": "SEP/2026",
+        "title": "Startups gain space to do business with investors at Mangue.Bit",
+        "desc": "The report covers the commemorative tenth edition of Mangue.Bit, an event held in Recife that brings together startups, investors and companies to stimulate business and strengthen the Northeast's innovation ecosystem. Among the initiatives presented is Literacia Edu, the startup founded by Karoline Fernandes that develops digital games and gamified tools to promote media and digital literacy for children and teenagers. Its main highlight is the game Meias Verdades, based on the prebunking strategy, which prepares users to recognize manipulation and disinformation tactics on social media in advance. The report also highlights the startup's expansion plans through an educational platform for public and private school networks, with gamified learning tracks for students and support tools for teachers.",
+        "source": "Movimento Econômico",
+        "cta": "Read article",
+        "url": "https://movimentoeconomico.com.br/economia/negocios/2026/09/23/startups-ganham-espaco-para-negocios-com-investidores-no-mangue-bit/",
+        "instagram": "https://www.instagram.com/reel/DdpdBnuEZCq/"
+      },
+      {
+        "type": "artigo",
+        "category": "OPINION",
+        "date": "AUG/2026",
+        "title": "To fight disinformation, journalists with a degree!",
+        "desc": "Journalist Karoline Fernandes defends valuing higher education in Journalism as a path to strengthen rigorous reporting, professional ethics and access to quality information in the face of the spread of fake news.",
+        "source": "Jornal do Comércio / JC",
+        "cta": "Read article",
+        "url": "https://jc.uol.com.br/opiniao/artigo/2026/08/20/para-enfrentar-a-desinformacao-jornalistas-com-diploma.html"
+      },
+      {
+        "type": "artigo",
+        "category": "CULTURE",
+        "date": "JUN/2026",
+        "title": "Journalist and researcher launches book on how to protect yourself from fake news",
+        "desc": "Karoline Fernandes' book Meias#Verdades presents scientific concepts about disinformation and proposes using prebunking and educational games to prepare people to recognize manipulation tactics before being deceived.",
+        "source": "JC",
+        "cta": "Read article",
+        "url": "https://jc.uol.com.br/cultura/2026/06/09/jornalista-e-pesquisadora-lanca-livro-sobre-como-se-proteger-das-fake-news.html"
+      },
+      {
+        "type": "artigo",
+        "category": "NEWS",
+        "date": "JUN/2026",
+        "title": "Journalist Karoline Fernandes launches book that teaches how to combat fake news",
+        "desc": "The publication, the result of doctoral research at UFPE, explains how psychological inoculation can help the public recognize misleading content. The report also highlights the development of the educational game Meias#Verdades, aimed at children and teenagers.",
+        "source": "Giro Blog / Diário de Pernambuco",
+        "cta": "Read article",
+        "url": "https://giroblog.com.br/jornalista-karoline-fernandes-lanca-livro-que-ensina-a-combater-fake-news/"
+      },
+      {
+        "type": "artigo",
+        "category": "NEWS",
+        "date": "JUN/2026",
+        "title": "Book by a Pernambuco researcher proposes creating “mental antibodies” against fake news",
+        "desc": "The report covers the proposal of building resistance to disinformation through prebunking, a method that presents manipulation strategies in advance, with explanations and refutations. It also highlights the emotional and cognitive mechanisms behind accepting false information and the potential of educational games for developing critical thinking.",
+        "source": "Revista O Grito!",
+        "cta": "Read article",
+        "url": "https://revistaogrito.com/livro-de-pesquisadora-pernambucana-propoe-criar-anticorpos-mentais-contra-fake-news/"
+      },
+      {
+        "type": "video",
+        "category": "REPORT",
+        "date": "",
+        "title": "The Theory of Psychological Inoculation in the Meias Verdades Game",
+        "desc": "The report covers the development of the digital game Meias Verdades by UFPE researchers, with a testing phase coordinated by Karoline Fernandes. The initiative is based on the theory of psychological inoculation, which works as a cognitive vaccine: by coming into contact with weakened versions of disinformation strategies and learning how they work, players build the ability to recognize manipulation attempts and resist misleading content in real life.",
+        "source": "TV Cultura",
+        "cta": "Watch report",
+        "url": "https://www.youtube.com/watch?v=m2_G8EusIoU"
+      },
+      {
+        "type": "video",
+        "category": "INTERVIEW",
+        "date": "",
+        "title": "Prebunking, Media Literacy and Serious Games",
+        "desc": "In an interview with TV Senado, Dr. Karoline Fernandes explains the limitations of after-the-fact fact checking (debunking) and highlights the importance of preventive strategies. Through prebunking and serious games, the proposal is to train participants to recognize five manipulation tactics: polarization, false identity, defamation, emotional appeal and conspiracy. The interview also stresses the need to bring media literacy into the school curriculum, promoting critical thinking and autonomy in the face of online information.",
+        "source": "TV Senado",
+        "cta": "Watch interview",
+        "url": "https://www.youtube.com/watch?v=j-E8kG70J0U"
+      },
+      {
+        "type": "radio",
+        "category": "INTERVIEW",
+        "date": "OCT/2026",
+        "title": "Cognitive Vaccine, Impartiality and Education Policies",
+        "desc": "In an interview with Rádio Jornal, Dr. Karoline Fernandes highlights the cross-cutting nature of disinformation and its link with polarized environments and emotional appeals. As a response, she defends a preventive approach based on psychological inoculation and the development of cognitive skills.",
+        "source": "Rádio Jornal",
+        "cta": "Watch interview",
+        "url": "https://www.youtube.com/watch?v=1a3og9z-gpY&t=3655s"
       }
     ]
   },

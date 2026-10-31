@@ -63,7 +63,7 @@ export default async function LocaleLayout({
   return (
     <>
       <Navbar locale={activeLocale} />
-      <main id="main-content" className="flex-grow pt-24">
+      <main id="main-content" className="flex-grow pt-[60px] md:pt-[108px]">
         {children}
       </main>
       <Footer locale={activeLocale} />

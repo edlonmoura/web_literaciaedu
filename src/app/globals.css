@@ -25,7 +25,9 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  overflow-x: hidden;
+  /* `clip` hides accidental horizontal overflow without creating a scroll
+     container, so `position: sticky` keeps working on inner pages. */
+  overflow-x: clip;
 }
 
 /* Custom Scrollbar */
@@ -53,6 +55,16 @@ html {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+
+/* Media carousel autoplay progress */
+@keyframes carousel-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .glass-dark {
