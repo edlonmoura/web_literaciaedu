@@ -118,7 +118,7 @@ export default function Navbar({ locale }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2 focus:outline-none shrink-0">
-          <div className="relative w-[152px] h-[41px] sm:w-[200px] sm:h-[54px] md:w-[300px] md:h-[80px] transition-transform duration-200 hover:scale-102">
+          <div className="relative w-[176px] h-[47px] sm:w-[200px] sm:h-[54px] md:w-[300px] md:h-[80px] transition-transform duration-200 hover:scale-102">
             {/* Prancheta 15 is our primary colored horizontal logo */}
             <Image
               src="/logo/LOGO__LITERACIA_EDU_Prancheta_15.png"
@@ -126,7 +126,7 @@ export default function Navbar({ locale }: NavbarProps) {
               fill
               className="object-contain"
               priority
-              sizes="(max-width: 640px) 152px, (max-width: 768px) 200px, 300px"
+              sizes="(max-width: 640px) 176px, (max-width: 768px) 200px, 300px"
             />
           </div>
         </Link>
